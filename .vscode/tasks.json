@@ -1,0 +1,17 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "CMake OpenRemise",
+      "type": "shell",
+      "isBackground": true,
+      "command": "cmake -Bbuild -GNinja"
+    },
+    {
+      "label": "Ninja OpenRemiseDocs",
+      "type": "shell",
+      "isBackground": true,
+      "command": "ninja -C build OpenRemiseDocs"
+    },
+  ]
+}
