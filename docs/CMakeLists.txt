@@ -1,4 +1,4 @@
-find_package(Doxygen QUIET COMPONENTS dot mscgen)
+find_package(Doxygen QUIET COMPONENTS dot)
 
 if(Doxygen_FOUND)
   cpmaddpackage("gh:jothepro/doxygen-awesome-css@2.3.3")

@@ -22,7 +22,7 @@ jobs:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v4.1.6
         with:
@@ -30,7 +30,7 @@ jobs:
       - name: Install prerequisites
         run: |
           sudo apt update -y
-          sudo apt install -y doxygen graphviz mscgen
+          sudo apt install -y doxygen graphviz openjdk-21-jdk
       - run: cmake -Bbuild
       - run: cmake --build build --parallel --target OpenRemiseDocs
       - name: Setup Pages
