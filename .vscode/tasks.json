@@ -2,16 +2,22 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "CMake OpenRemise",
+      "label": "Build OpenRemiseDocs",
+      "type": "shell",
+      "isBackground": true,
+      "command": "cmake --build build --target OpenRemiseDocs"
+    },
+    {
+      "label": "Config OpenRemise",
       "type": "shell",
       "isBackground": true,
       "command": "cmake -Bbuild -GNinja"
     },
     {
-      "label": "Ninja OpenRemiseDocs",
+      "label": "Run Python http.server",
       "type": "shell",
       "isBackground": true,
-      "command": "ninja -C build OpenRemiseDocs"
-    },
+      "command": "python -m http.server --directory ${workspaceFolder}/build/docs/html --bind 127.0.0.1"
+    }
   ]
 }

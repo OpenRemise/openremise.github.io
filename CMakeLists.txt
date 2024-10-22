@@ -17,4 +17,4 @@ file(DOWNLOAD
      "https://github.com/OpenRemise/.github/raw/master/data/.clang-format"
      ${CMAKE_CURRENT_LIST_DIR}/.clang-format)
 file(GLOB_RECURSE SRC src/*.[ch]pp tests/*.[ch]pp)
-add_clang_format_target(FirmwareFormat OPTIONS -i FILES ${SRC})
+add_clang_format_target(OpenRemiseFormat OPTIONS -i FILES ${SRC})
