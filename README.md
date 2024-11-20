@@ -1,5 +1,12 @@
 # :construction: openremise.github.io :construction:
 
+<a href="https://openremise.at">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github.com/OpenRemise/.github/raw/master/data/icons/icon_dark.svg">
+  <img src="https://github.com/OpenRemise/.github/raw/master/data/icons/icon_light.svg" width="20%" align="right">
+</picture>
+</a>
+
 # TODO
 - Flutter StreamBuilder can miss events (https://github.com/flutter/flutter/issues/112197)
 - Frontend FAKE_SERVICES need Z21 implementation, otherwise useless
@@ -21,9 +28,12 @@
   - And an entire table on larger ones?
   - Also, how about JMRI import?
   - re-read and re-write button?
+- Settings screen
+  - Consider splitting the list up into multiple tabs?
 - Slow mDNS resolution (mention that in the docs)
   - For some reason mDNS resolution is super slow on desktop...  
     https://askubuntu.com/questions/1279792/local-hostname-resolution-is-slow-on-20-04  
     This can be solved though by editing /etc/nsswitch.conf  
     https://wiki.archlinux.org/title/avahi  
     Replacing mdns_minimal with mdns4_minimal did the trick so far
+- [LittleFS](https://docs.espressif.com/projects/esp-idf/en/latest/esp32s3/api-guides/file-system-considerations.html) as file system
