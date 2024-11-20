@@ -33,7 +33,7 @@ if(Doxygen_FOUND)
   # Get customizations
   file(DOWNLOAD
        "https://github.com/OpenRemise/.github/raw/master/data/images/logo.svg"
-       ${CMAKE_SOURCE_DIR}/data/images/logo.svg)
+       ${CMAKE_CURRENT_BINARY_DIR}/html/logo.svg)
   file(
     DOWNLOAD
     "https://github.com/OpenRemise/.github/raw/master/data/fonts/GlacialIndifference-Bold.otf"
@@ -43,27 +43,7 @@ if(Doxygen_FOUND)
     "https://github.com/OpenRemise/.github/raw/master/data/fonts/GlacialIndifference-Regular.otf"
     ${CMAKE_CURRENT_BINARY_DIR}/html/GlacialIndifference-Regular.otf)
 
-  # Get KiCanvas (https://kicanvas.org/) and schematics/boards
-  file(DOWNLOAD "https://kicanvas.org/kicanvas/kicanvas.js"
-       ${CMAKE_CURRENT_BINARY_DIR}/html/kicanvas.js)
-  file(
-    DOWNLOAD
-    "https://github.com/OpenRemise/ESP32S3Board/raw/master/esp32s3board.kicad_sch"
-    ${CMAKE_CURRENT_BINARY_DIR}/html/esp32s3board.kicad_sch)
-  file(
-    DOWNLOAD
-    "https://github.com/OpenRemise/ESP32S3Board/raw/master/esp32s3board.kicad_pcb"
-    ${CMAKE_CURRENT_BINARY_DIR}/html/esp32s3board.kicad_pcb)
-  file(
-    DOWNLOAD
-    "https://github.com/OpenRemise/DRV8328Shield/raw/master/drv8323shield.kicad_sch"
-    ${CMAKE_CURRENT_BINARY_DIR}/html/drv8323shield.kicad_sch)
-  file(
-    DOWNLOAD
-    "https://github.com/OpenRemise/DRV8328Shield/raw/master/drv8323shield.kicad_pcb"
-    ${CMAKE_CURRENT_BINARY_DIR}/html/drv8323shield.kicad_pcb)
-
-  set(DOXYGEN_PROJECT_LOGO ${CMAKE_SOURCE_DIR}/data/images/logo.svg)
+  set(DOXYGEN_PROJECT_LOGO ${CMAKE_CURRENT_BINARY_DIR}/html/logo.svg)
   set(DOXYGEN_REPEAT_BRIEF NO)
   set(DOXYGEN_MULTILINE_CPP_IS_BRIEF YES)
   set(DOXYGEN_BUILTIN_STL_SUPPORT YES)
@@ -76,7 +56,7 @@ if(Doxygen_FOUND)
   set(DOXYGEN_EXTRACT_ANON_NSPACES YES)
   set(DOXYGEN_SHOW_FILES NO)
   set(DOXYGEN_LAYOUT_FILE ${CMAKE_CURRENT_LIST_DIR}/DoxygenLayout.xml)
-  set(DOXYGEN_IMAGE_PATH ${CMAKE_SOURCE_DIR}/data)
+  set(DOXYGEN_IMAGE_PATH ${CMAKE_CURRENT_LIST_DIR})
   set(DOXYGEN_HTML_HEADER ${CMAKE_CURRENT_LIST_DIR}/header.html)
   set(DOXYGEN_HTML_FOOTER ${CMAKE_CURRENT_LIST_DIR}/footer.html)
   set(DOXYGEN_HTML_EXTRA_STYLESHEET
@@ -101,10 +81,4 @@ if(Doxygen_FOUND)
   set(DOXYGEN_PLANTUML_JAR_PATH ${PLANTUML_JAR_PATH})
 
   doxygen_add_docs(${PROJECT_NAME}Docs ${CMAKE_SOURCE_DIR}/src)
-
-  add_custom_command(
-    TARGET ${PROJECT_NAME}Docs
-    POST_BUILD
-    COMMAND ${CMAKE_COMMAND} -E copy_directory ${CMAKE_SOURCE_DIR}/data
-            ${CMAKE_CURRENT_BINARY_DIR}/html)
 endif()
