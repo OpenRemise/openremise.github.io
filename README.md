@@ -15,7 +15,7 @@
 - Update screen
   - ZIMO updates should take .zsu and .zpp, when using .zpp users should be able to pick between MDU and ZUSI
   - Tams decoder update would be possible
-  - D&H decoder update requires "SX" capable hbridge
+  - ~~D&H decoder update requires "SX" capable hbridge~~
 - Z21 app import/export, maybe we should take a look at how the Z21 app imports/exports locos? It seems to be some sq3lite thing?
 - Controller
   - Option for left-handers to have slider left?
@@ -29,7 +29,7 @@
   - Also, how about JMRI import?
   - re-read and re-write button?
 - Settings screen
-  - Consider splitting the list up into multiple tabs?
+  - ~~Consider splitting the list up into multiple tabs~~
 - Slow mDNS resolution (mention that in the docs)
   - For some reason mDNS resolution is super slow on desktop...  
     https://askubuntu.com/questions/1279792/local-hostname-resolution-is-slow-on-20-04  
