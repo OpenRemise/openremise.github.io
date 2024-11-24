@@ -37,8 +37,8 @@
 /// \section section_introduction_features Features
 /// <div class="tabbed">
 /// - <b class="tab-title">Available</b>
-///   \image{inline} html open_source_initiative.svg width=16px &nbsp;<b>Open
-///   source hard- & software</b><br>
+///   \image{inline} html open_source_initiative.svg width=16px
+///   <b>Open source hard- & software</b><br>
 ///   Both the hard- and the software are freely available under copyleft
 ///   licenses. They do not contain any proprietary bits and everyone is free to
 ///   use or modify it as they see fit.
@@ -52,7 +52,8 @@
 ///   web browsers. Check out the [demo](https://openremise.at/Frontend/demo/)
 ///   to try it out.
 ///   <br><br>
-///   \image{inline} html square_wave.svg width=16px &nbsp;<b>DCC</b><br>
+///   \image{inline} html square_wave.svg width=16px
+///   <b>DCC</b><br>
 ///   DCC is the only track protocol supported, but in the most compatible yet
 ///   still cutting edge way. Changes to the standards are adopted quickly while
 ///   maintaining backwards compatibility.
@@ -62,15 +63,17 @@
 ///   safety. The lowest limit is also implicitly applied in service mode.
 ///   <br><br>
 ///   \image{inline} html system_update_alt.svg width=16px
-///   &nbsp;<b>Decoder updates</b><br>
+///   <b>Decoder updates</b><br>
 ///   All [ZIMO](https://www.zimo.at/web2010/index.html) MS-, MN- and MX
 ///   decoders can be updated.
 ///   <br><br>
-///   \emoji :musical_note: &nbsp;<b>Sound</b><br>
+///   \emoji :musical_note:
+///   <b>Sound</b><br>
 ///   All [ZIMO](https://www.zimo.at/web2010/index.html) MS-, MN- and MX
 ///   decoders can be loaded with sound (or general projects).
 ///   <br><br>
-///   \image{inline} html 3rd_party.svg width=16px &nbsp;<b>3rd party
+///   \image{inline} html 3rd_party.svg width=16px
+///   <b>3rd party
 ///   support</b><br>
 ///   The WiFi and USB interfaces allow a variety of 3rd party support. For
 ///   example, OpenRemise can be used with the following apps
@@ -94,17 +97,19 @@
 ///   </ul>
 ///   <br>
 /// - <b class="tab-title">Planned</b>
-///   \image{inline} html square_wave.svg width=16px &nbsp;<b>DCC</b><br>
+///   \image{inline} html square_wave.svg width=16px
+///   <b>DCC</b><br>
 ///   DCC support isn't complete yet. First of all, accessory commands are not
 ///   yet implemented.
 ///   <br><br>
 ///   \image{inline} html system_update_alt.svg width=16px
-///   &nbsp;<b>Decoder updates</b><br>
+///   <b>Decoder updates</b><br>
 ///   [tams elektronik](https://tams-online.de) has already provided information
 ///   on their decoder update procedure. An implementation in the near future is
 ///   very likely.
 ///   <br><br>
-///   \image{inline} html network.svg width=16px &nbsp;<b>Bus systems</b><br>
+///   \image{inline} html network.svg width=16px
+///   <b>Bus systems</b><br>
 ///   Sooner or later, a fully-fledged command station will need to be connected
 ///   to existing bus systems in order to integrate handheld controllers or
 ///   section modules. It is currently not clear which buses will be supported,
@@ -117,19 +122,19 @@
 ///   <br><br>
 /// - <b class="tab-title">Not planned</b>
 ///   \image{inline} html square_wave.svg width=16px
-///   &nbsp;<b>Other track protocols</b><br>
+///   <b>Other track protocols</b><br>
 ///   Contributions are welcome, but I will certainly not implement a different
 ///   other track protocol.
 ///   <br><br>
 ///   \image{inline} html system_update_alt.svg width=16px
-///   &nbsp;<b>Decoder updates</b><br>
+///   <b>Decoder updates</b><br>
 ///   [Doehler & Haass](https://doehler-haass.de/cms) deserve an honorable
 ///   mention here, as although they were keen to help with the implementation,
 ///   but their update procedure cannot be implemented so easily due to
 ///   technical limitations of the OpenRemise hardware.
 ///   <br><br>
-///   \image{inline} html sine_wave.svg width=16px &nbsp;<b>Analog
-///   operation</b><br>
+///   \image{inline} html sine_wave.svg width=16px
+///   <b>Analog operation</b><br>
 ///   <b>NO.</b>
 ///   <br><br>
 /// </div>
