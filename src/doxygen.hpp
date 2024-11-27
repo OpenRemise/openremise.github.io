@@ -193,7 +193,7 @@
 ///   - rmweb
 ///   - h0-modellbahnforum
 ///   - kleinbahnsammle
-/// - or **after you have already exhausted the other options** contact me at
+/// - or, **after you have already exhausted the other options**, contact me at
 ///   vincent.hamp@openremise.at
 ///
 /// \section section_faq_z21_app How to connect to the Z21 app?
