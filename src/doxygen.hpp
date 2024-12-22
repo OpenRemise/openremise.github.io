@@ -50,10 +50,8 @@
 ///   Windows and Linux](https://github.com/OpenRemise/Flasher) is available
 ///   specifically for this purpose. All further ongoing operation is possible
 ///   via the [Frontend](https://github.com/OpenRemise/Frontend) in all common
-///   web browsers. Check out the [demo](https://openremise.at/Frontend/demo/)
-///   to try it out.
-///   <br><br>
-///   \image{inline} html square_wave.svg width=16px
+///   web browsers. Check out the [demo](https://openremise.at/Frontend/demo) to
+///   try it out. <br><br> \image{inline} html square_wave.svg width=16px
 ///   **DCC**<br>
 ///   DCC is the only track protocol supported, but in the most compatible yet
 ///   still cutting edge way. Changes to the standards are adopted quickly while
@@ -84,7 +82,7 @@
 ///   The well-known Z21 app from [ROCO](https://www.roco.cc/ren) is fully
 ///   supported. Among other things, it allows you to control locomotives,
 ///   create layouts and also program CVs.
-///   <li>[JMRI](https://www.jmri.org/)</li><br>
+///   <li>[JMRI](https://www.jmri.org)</li><br>
 ///   Probably needs no introduction. Every model railroader's favorite set of
 ///   tools. Can do everything, maybe not very beginner-friendly.
 ///   <li>[ZCS](https://www.beathis.ch/zcs/index.html)</li><br>
@@ -193,8 +191,16 @@
 ///   - rmweb
 ///   - h0-modellbahnforum
 ///   - kleinbahnsammle
-/// - or **after you have already exhausted the other options** contact me at
+/// - or, **after you have already exhausted the other options**, contact me at
 ///   vincent.hamp@openremise.at
+///
+/// \section section_faq_captive_portal How to reopen the captive portal?
+/// If the board can no longer log into your WiFi for some reason, e.g. because
+/// the password has been changed or you made a typo in the captive portal, you
+/// can create an access point by holding down BOOT for about **5 seconds**
+/// during operation. The blue LED then lights up and an access point called
+/// **OpenRemise** opens. There you can change the WiFi password as already seen
+/// in the \ref section_getting_started_wifi "Getting Started" Guide.
 ///
 /// \section section_faq_z21_app How to connect to the Z21 app?
 /// Mit IP usw.
@@ -235,20 +241,21 @@
 /// only had USB.
 ///
 /// So I started working on a Bluetooth decoder update device in my free time.
+/// The first prototype was called **MSBlueZ** and was built on an
+/// [STMicroelectronics](https://www.st.com/content/st_com/en.html)
+/// [STM32WB55](https://www.st.com/en/microcontrollers-microprocessors/stm32wb55rg.html)
+/// basis.
 ///
-/// \todo
-/// Pictures of MSBlueZ here
+/// \image html msbluez.png "\"MSBlueZ\""
 ///
 /// The "Bluetooth part" didn't last long though. One day I stumbled upon a demo
 /// of someone serving an HTML page from an
 /// [ESP32](https://www.espressif.com/en/products/socs/esp32) over WiFi and I've
 /// obsessed over the idea ever since. Conveniently,
-/// [Espressif](https://www.espressif.com/) introduced an ESP32 with USB around
-/// the same time, and so Bluetooth on an
-/// [STMicroelectronics](https://www.st.com/content/st_com/en.html)
-/// [STM32](https://www.st.com/en/microcontrollers-microprocessors/stm32-32-bit-arm-cortex-mcus.html)
-/// soon became WiFi on an ESP32. At the time, I had not considered how much
-/// additional work my decision would entail...
+/// [Espressif](https://www.espressif.com) introduced an ESP32 with USB around
+/// the same time, and so Bluetooth on an STM32 soon became WiFi on an ESP32. At
+/// the time, I had not considered how much additional work my decision would
+/// entail...
 ///
 /// Suddenly I had to deal with HTTP requests and WebSockets, something I had no
 /// idea about. In that sense, this turned out to be a very educational side
@@ -259,22 +266,41 @@
 /// writing the [Frontend](https://openremise.at/Frontend), a combination that
 /// I've come to appreciate very much.
 ///
-/// \todo
-/// Pictures of older WULFs here
-///
 /// However, the additional workload was not the only problem. The path to the
-/// final design of my H-bridge led via 3 different fully integrated ICs, each
-/// of which had its own problems...
+/// final design of my H-bridge led via **3 different fully integrated ICs**,
+/// each of which had its own problems... I will spare you all the details, but
+/// one of these problematic H-bridges was the
+/// [DRV8874](https://www.ti.com/product/de-de/DRV8874), seen here in a
+/// prototype called **WULF**.
 ///
-/// \todo
-/// Pictures of stacked ESP32S3Board/DRV8328Shield
+/// \image html wulf.png "\"WULF\""
+///
+/// At some point during this development process I also decided to keep the
+/// design [Arduino](https://www.arduino.cc/) compatible. What is never shown on
+/// these beautiful PCB pictures on the internet, however, is how **incredibly
+/// fiddly** this stacking is... After just one iteration of this design, I had
+/// had enough.
+///
+// clang-format off
+/// \page page_history History
+/// \details \tableofcontents
+/// \image html esp32s3board_drv8328shield.png "\"ESP32S3Board\" stacked on a \"DRV8328Shield\""
+// clang-format on
+/// \page page_history History
+/// \details \tableofcontents
+///
+/// From this time on, however, the hardware did not change fundamentally.
+/// **OpenRemise** was set as the project name and the design was reduced back
+/// to a single board.
+///
+/// \image html s3main.png "\"S3Main\""
 ///
 /// When the project was in a somewhat presentable state, I showed it to my
 /// employer, who showed no interest at all. At this point it was clear that I
 /// had to open source the project so that all my work would not be in vain. The
-/// [DCC-EX](https://dcc-ex.com/) project and it's success gave me the
-/// confidence to actually do this, even though the release was still a long way
-/// off at the time...
+/// [DCC-EX](https://dcc-ex.com) project and it's success gave me the confidence
+/// to actually do this, even though the release was still a long way off at the
+/// time...
 ///
 /// <div class="section_buttons">
 /// | Previous      |
