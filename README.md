@@ -8,30 +8,29 @@
 </a>
 
 ## TODOs
-- Slow mDNS resolution (mention that in the docs)
-  - For some reason mDNS resolution can be super slow on desktop...  
-    https://askubuntu.com/questions/1279792/local-hostname-resolution-is-slow-on-20-04  
-    This can be solved though by editing /etc/nsswitch.conf  
-    https://wiki.archlinux.org/title/avahi  
-    Replacing mdns_minimal with mdns4_minimal did the trick so far
-
 ### Firmware
+- Do not use `portMAX_DELAY` anywhere unless you are **absolutely sure** that it cannot block
 - ~~CMakeLists.txt needs a release target which creates a .zip file.~~
 - Frontend shouldn't be built from source unless there is a specific CMake option set.
 - And apropos release... please measure the DCC offsets for the release build!
 - ~~When keeping BOOT pressed the user should be able to get into AP mode. I guess the easiest way to achieve this is by resetting mDNS to "remise" deleting SSID and pass from NVS?~~
 - ~~Maybe take another look at the service mode ACK algorithm. Should be possible to always detect it right without adjusting the threshold.~~ (sample rate has been on beat with DCC...)
 - [LittleFS](https://docs.espressif.com/projects/esp-idf/en/latest/esp32s3/api-guides/file-system-considerations.html) as file system
+- How about [WiThrottle](https://www.jmri.org/help/en/package/jmri/jmrit/withrottle/Protocol.shtml) support? This would allow running [Engine Driver](https://enginedriver.mstevetodd.com/).
 
 ### Frontend
 - HTML renderer is [deprecated](https://github.com/flutter/flutter/issues/145954)
-- ZUSI soundload should write CVs (maybe for both... MS and MX who cares)
+- ~~ZUSI soundload should write CVs (maybe for both... MS and MX who cares)~~
 - Proper .gifs for loading and error states (maybe with the loco icon?)
+  - [Synfig](https://www.synfig.org)
+  - [Glaxnimate](https://glaxnimate.mattbas.org)
 - Flutter StreamBuilder can miss events (https://github.com/flutter/flutter/issues/112197)
 - Frontend FAKE_SERVICES need Z21 implementation, otherwise useless
 - ~~Implement Z21 ShortCircuit...? We need to check how to recover from that.~~
 - Implement DECUP services
 - Update screen
+  - ~~Replace "tracks" symbol (whats shown if ZUSI ain't picked as mode) with an actual track symbol~~
+  - Error messages for ZPP and ZSU updates
   - ~~ZIMO updates should take .zsu and .zpp, when using .zpp users should be able to pick between MDU and ZUSI~~
   - Tams decoder update would be possible
   - ~~D&H decoder update requires "SX" capable hbridge~~
@@ -40,8 +39,8 @@
   - Option for left-handers to have slider left?
   - LinearGradient for Sliders CustomCurve would be great... (would be a PR)
   - MAN button?
-- Service screen
-  - There currently is no feedback on writing?
+- Program screen
+  - ~~There currently is no feedback on writing?~~
   - ~~There's still a bug when writing a CV. Changing the value afterwards isn't possible as it gets overwritten by the one previously red.~~
   - Look how Z21 does it, probably a good idea to split between some large display screen and small display screen
   - Have just a single CV read/write button on small screen
@@ -49,7 +48,8 @@
   - Also, how about JMRI import?
   - re-read and re-write button?
 - Settings screen
-  - Button which sets defaults (apart from mDNS, SSID and password I guess)
+  - ~~Restart button?~~
+  - ~~Button which sets defaults (apart from mDNS, SSID and password I guess)~~
   - ~~Consider splitting the list up into multiple tabs~~
 
 ### S3Main
@@ -62,22 +62,22 @@
 - Getting Started :negative_squared_cross_mark:
 - FAQ :negative_squared_cross_mark:
 - Getting Involved :negative_squared_cross_mark:
-- History :negative_squared_cross_mark:
+- History :ballot_box_with_check:
 
 ### Firmware
 - Introduction :ballot_box_with_check:
 - Getting Started :ballot_box_with_check:
   - Development :ballot_box_with_check:
-  - Configuration :negative_squared_cross_mark:
+  - Configuration :ballot_box_with_check:
   - Architecture :ballot_box_with_check:
-  - Control flow :negative_squared_cross_mark:
+  - Control Flow :negative_squared_cross_mark:
 - API Reference :ballot_box_with_check:
   - Analog :ballot_box_with_check:
   - DCC :negative_squared_cross_mark:
   - DECUP :negative_squared_cross_mark:
   - HTTP :negative_squared_cross_mark:
   - MDU :negative_squared_cross_mark:
-  - Memory :negative_squared_cross_mark:
+  - Memory :ballot_box_with_check:
   - OTA :negative_squared_cross_mark:
   - Out :negative_squared_cross_mark:
   - UDP :negative_squared_cross_mark:
@@ -102,4 +102,4 @@
 ### Flasher
 - Introduction :ballot_box_with_check:
 - Getting Started :ballot_box_with_check:
-- API Reference :negative_squared_cross_mark:
+- API Reference :ballot_box_with_check:
