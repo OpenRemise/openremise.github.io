@@ -80,5 +80,5 @@ if(Doxygen_FOUND)
   set(DOXYGEN_DOT_IMAGE_FORMAT svg)
   set(DOXYGEN_PLANTUML_JAR_PATH ${PLANTUML_JAR_PATH})
 
-  doxygen_add_docs(${PROJECT_NAME}Docs ${CMAKE_SOURCE_DIR}/src)
+  doxygen_add_docs(${PROJECT_NAME}Docs ALL ${CMAKE_SOURCE_DIR}/src)
 endif()
