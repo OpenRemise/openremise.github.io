@@ -201,14 +201,27 @@
 /// any problems, please consider **in the following order** to either
 /// - open an issue at [GitHub](https://github.com/OpenRemise)
 /// - ask in one of the following forum threads
-///   - stummi
-///   - 1zu160
-///   - opendcc
-///   - rmweb
-///   - h0-modellbahnforum
-///   - kleinbahnsammle
+///   - https://www.stummiforum.de/
+///   - https://www.1zu160.net/scripte/forum/index.php
+///   - https://forum.opendcc.de
+///   - https://www.rmweb.co.uk/forums/
+///   - https://www.h0-modellbahnforum.de/
+///   - https://www.kleinbahnsammler.at/wbb2/
 /// - or, **after you have already exhausted the other options**, contact me at
 ///   vincent.hamp@openremise.at
+///
+/// \section section_faq_contribute How can I get involved?
+/// OpenRemise is currently a one-man project, so **any contributions would be
+/// very welcome**. These can be made in a variety of ways, you don't have to be
+/// a software or electronics expert to help. You could report bugs you find,
+/// write documentation or simply answer questions from other users in forums.
+/// Tutorials and/or blog posts would also be great! Of course, if you're a
+/// coding ninja \emoji :ninja:, I'm not opposed to that either. My own
+/// weaknesses lie in graphics and design, which would be awesome to complement
+/// as well.
+///
+/// If you are interested, please contact me in the forums mentioned \ref
+/// section_faq_support "above" or at my email address.
 ///
 /// \section section_faq_connectors Where can I buy the connectors?
 /// The 3.5 and 5.08mm connectors are available from several manufacturers.
@@ -227,8 +240,19 @@
 /// \page page_faq FAQ
 /// \details \tableofcontents
 ///
-/// \section section_faq_z21_app How to connect to the Z21 app?
-/// Mit IP usw.
+/// \section section_faq_z21_app How to connect using the Z21 app?
+/// Unfortunately, the [Z21 app](https://www.z21.eu/en/products/z21-app)
+/// currently does not support mDNS resolution but requires the manual entry of
+/// an IP address. However, to find out the IP address of your OpenRemise board,
+/// it is sufficient to access the homepage of your domain.
+///
+// clang-format off
+/// \page page_faq FAQ
+/// \details \tableofcontents
+/// \image html how_to_connect_using_the_z21_app.png "Frontend homepage / Z21 app settings screen" width=480px
+// clang-format on
+/// \page page_faq FAQ
+/// \details \tableofcontents
 ///
 /// \section section_faq_captive_portal How to reopen the captive portal?
 /// If the board can no longer log into your WiFi for some reason, e.g. because
@@ -276,20 +300,9 @@
 /// \details \tableofcontents
 ///
 /// <div class="section_buttons">
-/// | Previous                  | Next                       |
-/// | :------------------------ | -------------------------: |
-/// | \ref page_getting_started | \ref page_getting_involved |
-/// </div>
-
-/// \page page_getting_involved Getting Involved
-/// \details \tableofcontents
-/// \todo
-/// Join on GitHub...?
-///
-/// <div class="section_buttons">
-/// | Previous      | Next              |
-/// | :------------ | ----------------: |
-/// | \ref page_faq | \ref page_history |
+/// | Previous                  | Next              |
+/// | :------------------------ | ----------------: |
+/// | \ref page_getting_started | \ref page_history |
 /// </div>
 
 /// \page page_history History
