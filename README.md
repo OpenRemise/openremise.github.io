@@ -11,7 +11,7 @@
 ### Firmware
 - Do not use `portMAX_DELAY` anywhere unless you are **absolutely sure** that it cannot block
 - ~~CMakeLists.txt needs a release target which creates a .zip file.~~
-- Frontend shouldn't be built from source unless there is a specific CMake option set.
+- ~~Frontend shouldn't be built from source unless there is a specific CMake option set.~~
 - And apropos release... please measure the DCC offsets for the release build!
 - ~~When keeping BOOT pressed the user should be able to get into AP mode. I guess the easiest way to achieve this is by resetting mDNS to "remise" deleting SSID and pass from NVS?~~
 - ~~Maybe take another look at the service mode ACK algorithm. Should be possible to always detect it right without adjusting the threshold.~~ (sample rate has been on beat with DCC...)
@@ -21,16 +21,16 @@
 ### Frontend
 - HTML renderer is [deprecated](https://github.com/flutter/flutter/issues/145954)
 - ~~ZUSI soundload should write CVs (maybe for both... MS and MX who cares)~~
-- Proper .gifs for loading and error states (maybe with the loco icon?)
-  - [Synfig](https://www.synfig.org)
-  - [Glaxnimate](https://glaxnimate.mattbas.org)
+- ~~Proper .gifs using Synfig for loading and error states (maybe with the loco icon?)~~
 - Flutter StreamBuilder can miss events (https://github.com/flutter/flutter/issues/112197)
 - Frontend FAKE_SERVICES need Z21 implementation, otherwise useless
 - ~~Implement Z21 ShortCircuit...? We need to check how to recover from that.~~
-- Implement DECUP services
+- ~~Implement DECUP services~~
+- Info screen
+  - It would be great if `Refresh` could actually put `sysProvider` back into loading state so that the loading gif is shown.
 - Update screen
   - ~~Replace "tracks" symbol (whats shown if ZUSI ain't picked as mode) with an actual track symbol~~
-  - Error messages for ZPP and ZSU updates
+  - ~~Error messages for ZPP and ZSU updates~~
   - ~~ZIMO updates should take .zsu and .zpp, when using .zpp users should be able to pick between MDU and ZUSI~~
   - Tams decoder update would be possible
   - ~~D&H decoder update requires "SX" capable hbridge~~
@@ -40,6 +40,7 @@
   - LinearGradient for Sliders CustomCurve would be great... (would be a PR)
   - MAN button?
 - Program screen
+  - Fake services don't have CVs on each loco atm
   - ~~There currently is no feedback on writing?~~
   - ~~There's still a bug when writing a CV. Changing the value afterwards isn't possible as it gets overwritten by the one previously red.~~
   - Look how Z21 does it, probably a good idea to split between some large display screen and small display screen
@@ -51,10 +52,6 @@
   - ~~Restart button?~~
   - ~~Button which sets defaults (apart from mDNS, SSID and password I guess)~~
   - ~~Consider splitting the list up into multiple tabs~~
-
-### S3Main
-- ~~Need to check if DECUP works @18V with 0.47µF (0.33uF?) at the TPS281C100 output. If it does, adjust the silkscreen on the bottom side of the S3Main board. Update: It didn't. Maybe change the voltage divider on the ACK circuit (1k/4k7) to (1k/10k) so that turn-off becomes faster?~~
-- Ordered rev 0.1.0
 
 ## Documentation
 ### openremise
