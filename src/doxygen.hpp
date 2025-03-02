@@ -169,20 +169,83 @@
 
 /// \page page_getting_started Getting Started
 /// \details \tableofcontents
-/// \todo
-/// Where to get the hardware, how to install using the Flasher, YouTube?
 ///
-/// \section section_getting_started_buy_a_board Buy a board
-/// Buy @ PCBWay
+/// \section section_getting_started_buy_a_board Buy a Board
+/// Fully assembled boards can be purchased at the
+/// [Bazaar](https://www.pcbway.com/project/gifts_list.html?itemsboxid=15&sortid=1&stock=0)
+/// section in the [PCBWay store](https://www.pcbway.com/project/gifts.html).
+/// Please note that these boards do not contain any software when delivered.
+/// This also means that the PCBs can only subjected to a visual inspection and
+/// not a functional test. However, I also had all of my \ref page_history
+/// "prototypes" manufactured at PCBWay and have not had a single soldering
+/// error in over 10 orders.
 ///
-/// \subsection subsection_getting_started_or_manufacture ...or manufacture one
-/// Or build your own? JLCPCB, PCBWay
+/// \todo Bild eingepackte boards hier?
+///
+/// \subsection subsection_getting_started_or_manufacture ...or Manufacture One
+/// If you don't fancy buying from PCBWay, you are welcome to manufacture your
+/// own board at any other PCB service, e.g.
+/// - [JLCPCB](https://jlcpcb.com)
+/// - [Pcbcart](https://www.pcbcart.com)
+/// - [Eurocircuits](https://www.eurocircuits.com)
+/// - and so forth...
+///
+/// The [KiCad](https://www.kicad.org) project with all Gerber files can be
+/// found on [GitHub](https://github.com/OpenRemise/S3Main).
 ///
 /// \section section_getting_started_install Install the Firmware
-/// Flasher
+/// Installing the firmware is very simple and all you need is a USB port.
+///
+/// \subsection subsection_getting_started_bl Put the Board into Bootloader
+/// Blabla put it in boot mode
+///
+/// \subsection subsection_getting_started_flasher Upload the Firmware
+/// To flash the firmware onto a brand new board there is a small tool called...
+/// well, [Flasher](https://github.com/OpenRemise/Flasher). It is available for
+/// both Windows and Linux operating systems. The latest release can always be
+/// downloaded at the following link.<br>
+/// https://github.com/OpenRemise/Flasher/releases/latest
+///
+/// <div class="tabbed">
+/// - <b class="tab-title">Windows</b>
+///   - Download and extract `Flasher-*.*.*-Windows-x64.zip`
+///   - Run `Flasher.bat`
+///   - Click the `Download latest firmware` button
+///   - Wait until the display shows `Done`
+///   - Click the `Start` button
+///   - Wait until the display shows `Done` again
+/// - <b class="tab-title">Linux</b>
+///   - Download and extract `Flasher-*.*.*-Linux-x64.zip`
+///   - Make `Flasher.sh` executable by running `chmod +x Flasher.sh`
+///   - Run `Flasher.sh`
+///   - Click the `Download latest firmware` button
+///   - Wait until the display shows `Done`
+///   - Click the `Start` button
+///   - Wait until the display shows `Done` again
+/// </div>
+///
+/// Some more text in between please
+///
+/// \htmlonly
+/// <div class="image">
+/// <iframe width="480" height="640" src="install_the_firmware.webm"></iframe>
+/// <div class="caption">Flashing the firmware using the "Flasher" tool</div>
+/// </div>
+/// \endhtmlonly
+///
+/// \note
+/// Please note that this screen capture has been accelerated. Depending on the
+/// baud rate, uploading the firmware may take a few minutes.
 ///
 /// \section section_getting_started_wifi Connect to WiFi
 /// Captive portal thingy
+///
+/// \htmlonly
+/// <div class="image">
+/// <iframe width="286" height="640" src="captive_portal.webm"></iframe>
+/// <div class="caption">Blablabla</div>
+/// </div>
+/// \endhtmlonly
 ///
 /// <div class="section_buttons">
 /// | Previous   | Next              |
