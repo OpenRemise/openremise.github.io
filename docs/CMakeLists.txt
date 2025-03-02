@@ -81,4 +81,15 @@ if(Doxygen_FOUND)
   set(DOXYGEN_PLANTUML_JAR_PATH ${PLANTUML_JAR_PATH})
 
   doxygen_add_docs(${PROJECT_NAME}Docs ALL ${CMAKE_SOURCE_DIR}/src)
+
+  add_custom_command(
+    TARGET ${PROJECT_NAME}Docs
+    POST_BUILD
+    COMMAND
+      ${CMAKE_COMMAND} -E copy ${CMAKE_CURRENT_LIST_DIR}/captive_portal.webm
+      ${CMAKE_CURRENT_BINARY_DIR}/html/captive_portal.webm
+    COMMAND
+      ${CMAKE_COMMAND} -E copy
+      ${CMAKE_CURRENT_LIST_DIR}/install_the_firmware.webm
+      ${CMAKE_CURRENT_BINARY_DIR}/html/install_the_firmware.webm)
 endif()

@@ -19,7 +19,7 @@
 - How about [WiThrottle](https://www.jmri.org/help/en/package/jmri/jmrit/withrottle/Protocol.shtml) support? This would allow running [Engine Driver](https://enginedriver.mstevetodd.com/).
 
 ### Frontend
-- HTML renderer is [deprecated](https://github.com/flutter/flutter/issues/145954)
+- ~~HTML renderer is [deprecated](https://github.com/flutter/flutter/issues/145954)~~
 - ~~ZUSI soundload should write CVs (maybe for both... MS and MX who cares)~~
 - ~~Proper .gifs using Synfig for loading and error states (maybe with the loco icon?)~~
 - Flutter StreamBuilder can miss events (https://github.com/flutter/flutter/issues/112197)
@@ -58,7 +58,6 @@
 - Introduction :negative_squared_cross_mark:
 - Getting Started :negative_squared_cross_mark:
 - FAQ :negative_squared_cross_mark:
-- Getting Involved :negative_squared_cross_mark:
 - History :ballot_box_with_check:
 
 ### Firmware
