@@ -195,37 +195,73 @@
 /// found on [GitHub](https://github.com/OpenRemise/S3Main).
 ///
 /// \section section_getting_started_install Install the Firmware
-/// Installing the firmware is very simple and all you need is a USB port.
+/// Flashing the firmware for the first time is easier than with many
+/// professional products. The only things you need besides the board itself
+/// (obviously) are
+/// - A DC power supply (10-22V)
+/// - A [USB-C](https://en.wikipedia.org/wiki/USB-C) cable
+/// - A Linux or Windows computer with a free USB port
+///
+/// Supply the board with power and plug in the USB-C cable. The **red LED**
+/// under the&nbsp; \image{inline} html power.svg width=16px &nbsp;symbol on the
+/// board should now **light up**.
+///
+/// \note
+/// If the red LED does not light up, please check the polarity of the power
+/// supply.
 ///
 /// \subsection subsection_getting_started_bl Put the Board into Bootloader
-/// Blabla put it in boot mode
+/// In order to make the board receptive to uploads, we need to switch to the
+/// so-called **bootloader**. Conveniently, I printed the instructions directly
+/// onto the board \emoji :wink:. The two buttons **EN** and **BOOT** must be
+/// pressed in the following order.
+/// - Hold EN
+/// - Hold BOOT
+/// - Release EN
+/// - Release BOOT
+///
+/// Unfortunately, the board doesn't give any feedback as to whether it is
+/// actually in boot mode. If it turns out later that it isn't, you can repeat
+/// the process at any time without worrying about breaking anything.
 ///
 /// \subsection subsection_getting_started_flasher Upload the Firmware
-/// To flash the firmware onto a brand new board there is a small tool called...
-/// well, [Flasher](https://github.com/OpenRemise/Flasher). It is available for
-/// both Windows and Linux operating systems. The latest release can always be
-/// downloaded at the following link.<br>
+/// To flash the firmware onto a factory new board there is a small tool
+/// called... well, [Flasher](https://github.com/OpenRemise/Flasher). It is
+/// available for both Windows and Linux operating systems. The latest release
+/// can always be downloaded at the following link.<br>
 /// https://github.com/OpenRemise/Flasher/releases/latest
 ///
+/// Please select your operating system and follow the steps.
+///
+// clang-format off
+/// \page page_getting_started Getting Started
+/// \details \tableofcontents
 /// <div class="tabbed">
-/// - <b class="tab-title">Windows</b>
-///   - Download and extract `Flasher-*.*.*-Windows-x64.zip`
-///   - Run `Flasher.bat`
-///   - Click the `Download latest firmware` button
-///   - Wait until the display shows `Done`
-///   - Click the `Start` button
-///   - Wait until the display shows `Done` again
 /// - <b class="tab-title">Linux</b>
 ///   - Download and extract `Flasher-*.*.*-Linux-x64.zip`
 ///   - Make `Flasher.sh` executable by running `chmod +x Flasher.sh`
 ///   - Run `Flasher.sh`
-///   - Click the `Download latest firmware` button
+///   - Click the `Download latest firmware` \image{inline} html network_drive.svg width=24px button
 ///   - Wait until the display shows `Done`
-///   - Click the `Start` button
+///   - Click the `Start` \image{inline} html play.svg width=24px button
 ///   - Wait until the display shows `Done` again
+///   - Press the EN button on the board to reboot
+/// - <b class="tab-title">Windows</b>
+///   - Download and extract `Flasher-*.*.*-Windows-x64.zip`
+///   - Run `Flasher.bat`
+///   - Click the `Download latest firmware` \image{inline} html network_drive.svg width=24px button
+///   - Wait until the display shows `Done`
+///   - Click the `Start` \image{inline} html play.svg width=24px button
+///   - Wait until the display shows `Done` again
+///   - Press the EN button on the board to reboot
 /// </div>
+// clang-format on
+/// \page page_getting_started Getting Started
+/// \details \tableofcontents
 ///
-/// Some more text in between please
+/// The following (accelerated) clip shows what the upload should look like.
+/// Depending on the baud rate, uploading the firmware may take **a few
+/// minutes**.
 ///
 /// \htmlonly
 /// <div class="image">
@@ -235,16 +271,38 @@
 /// \endhtmlonly
 ///
 /// \note
-/// Please note that this screen capture has been accelerated. Depending on the
-/// baud rate, uploading the firmware may take a few minutes.
+/// If the device from which the update is to be performed does not have
+/// internet access, it is also possible to open the firmware file from a local
+/// storage medium. To do this, use the `Open firmware` \image{inline} html
+/// hard_drive.svg width=24px button. The firmware can be downloaded from the
+/// following link.<br>
+/// https://github.com/OpenRemise/Firmware/releases/latest
 ///
 /// \section section_getting_started_wifi Connect to WiFi
-/// Captive portal thingy
+/// Congratulations, you have successfully installed the OpenRemise firmware on
+/// a board. Some features, such as USB, already work, but the board is still
+/// running in what is known as access point mode. This means that the **board
+/// initially opens its own WiFi network** and does not connect to one.
+/// Therefore, we still need to adjust the WiFi settings to connect to the
+/// desired network.
+///
+/// To **change the WiFi settings** you have to connect to the board with a
+/// WiFi-enabled device. If your PC doesn't have WiFi, you can simply use a
+/// smartphone. Any device with a web browser is sufficient.
+///
+/// The following steps are necessary to change the settings.
+/// - Search for new WiFi networks
+/// - Connect to `OpenRemise`
+/// - Open a web browser and go to `remise.local`
+/// - Change the WiFi settings
+/// - Click `Save and restart`
+///
+/// The following clip shows me performing these steps on my smartphone.
 ///
 /// \htmlonly
 /// <div class="image">
 /// <iframe width="286" height="640" src="captive_portal.webm"></iframe>
-/// <div class="caption">Blablabla</div>
+/// <div class="caption">Changing WiFi settings from a smartphone</div>
 /// </div>
 /// \endhtmlonly
 ///
