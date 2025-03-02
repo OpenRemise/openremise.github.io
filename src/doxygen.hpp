@@ -180,7 +180,8 @@
 /// "prototypes" manufactured at PCBWay and have not had a single soldering
 /// error in over 10 orders.
 ///
-/// \todo Bild eingepackte boards hier?
+/// \todo
+/// Picture of packed boards here?
 ///
 /// \subsection subsection_getting_started_or_manufacture ...or Manufacture One
 /// If you don't fancy buying from PCBWay, you are welcome to manufacture your
@@ -228,7 +229,7 @@
 ///
 /// \htmlonly
 /// <div class="image">
-/// <iframe width="480" height="640" src="install_the_firmware.webm"></iframe>
+/// <iframe width="360" height="480" src="install_the_firmware.webm"></iframe>
 /// <div class="caption">Flashing the firmware using the "Flasher" tool</div>
 /// </div>
 /// \endhtmlonly
@@ -307,7 +308,9 @@
 /// Unfortunately, the [Z21 app](https://www.z21.eu/en/products/z21-app)
 /// currently does not support mDNS resolution but requires the manual entry of
 /// an IP address. However, to find out the IP address of your OpenRemise board,
-/// it is sufficient to access the homepage of your domain.
+/// it is sufficient to access the homepage of your domain. The IP address that
+/// is shown on the info screen is also the one that must be entered in the Z21
+/// app.
 ///
 // clang-format off
 /// \page page_faq FAQ
