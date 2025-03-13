@@ -143,7 +143,7 @@
 ///   in English. As a native German speaker, this is a bit embarrassing...
 ///   <br><br>
 /// - <b class="tab-title">Not planned</b>
-///   \htmlonly &#128732; \endhtmlonly
+///   \image{inline} html wifi.svg width=16px
 ///   **Access point operation**<br>
 ///   OpenRemise is designed to be integrated into an existing network. Access
 ///   point operation is not planned for the time being, but contributions would
@@ -213,7 +213,7 @@
 ///
 /// Supply the board with power and plug in the USB-C cable. The **red LED**
 /// under the&nbsp; \image{inline} html power.svg width=16px &nbsp;symbol on the
-/// board should now **light up**.
+/// board should **light up**.
 ///
 /// \note
 /// If the red LED does not light up, please check the polarity of the power
@@ -321,6 +321,23 @@
 /// Clicking on the arrow next to "Networks" opens a list of all the networks
 /// found, including signal strength and open/closed status. If the network is
 /// password protected, a small lock symbol will appear next to it.
+///
+/// \section section_getting_started_frontend Open the Frontend
+/// If the board has restarted and the WiFi settings are correct, it should now
+/// connect to the network. The **green LED** under the&nbsp; \image{inline}
+/// html wifi.svg width=16px &nbsp;symbol **lights up** as soon as a connection
+/// is established.
+///
+/// From this point on, the web interface will be available at the local
+/// [mDNS](https://en.wikipedia.org/wiki/Multicast_DNS) address (e.g.
+/// `http://remise.local`).
+///
+/// \warning
+/// OpenRemise currently only supports
+/// [HTTP](https://en.wikipedia.org/wiki/HTTP). Your browser may warn you before
+/// accessing this page and ask for explicit permission to access it. To prevent
+/// this from happening again on every visit, it is recommended to add an
+/// exception.
 ///
 /// <div class="section_buttons">
 /// | Previous   | Next              |
