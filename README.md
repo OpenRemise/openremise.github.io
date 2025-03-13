@@ -86,6 +86,9 @@
 ### Frontend
 - Introduction :ballot_box_with_check:
 - Getting Started :negative_squared_cross_mark:
+  - Development :ballot_box_with_check:
+  - Configuration :negative_squared_cross_mark:
+  - Architecture :ballot_box_with_check:
 - API Reference :negative_squared_cross_mark:
   - Constants :negative_squared_cross_mark:
   - Models :negative_squared_cross_mark:
