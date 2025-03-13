@@ -61,6 +61,13 @@
 ///   still cutting edge way. Changes to the standards are adopted quickly while
 ///   maintaining backwards compatibility.
 ///   <br><br>
+///   \image{inline} html Z21.png width=16px
+///   **Z21**<br>
+///   The [Z21
+///   protocol](https://www.z21.eu/media/Kwc_Basic_DownloadTag_Component/root-en-main_47-1652-959-downloadTag-download/default/d559b9cf/1699290380/z21-lan-protokoll-en.pdf)
+///   became a kind of lingua franca for model railways thanks to its open
+///   documentation. For this reason, it is also fully supported by OpenRemise.
+///   <br><br>
 ///   \htmlonly &#9107; \endhtmlonly
 ///   **Adjustable current limits**<br>
 ///   4 adjustable current limits (0.5, 1.3, 2.7 and 4.1A) ensure operational
@@ -91,6 +98,8 @@
 ///   tools. Can do everything, maybe not very beginner-friendly.
 ///   <li>[ZCS](https://www.beathis.ch/zcs/index.html)</li><br>
 ///   A CV programming tool specifically for ZIMO decoders.
+///   <li>[Rocrail](https://wiki.rocrail.net)</li><br>
+///   Cross-platform software for controlling layouts.
 ///   <li>[ZIMO
 ///   ZSP](https://www.zimo.at/web2010/products/zsp_zimo-sound-programmer_EN.htm)</li><br>
 ///   The ZIMO Sound Programmer, used to create, preview and modify sound
@@ -98,6 +107,7 @@
 ///   <li>[Z2X-Programmer](https://github.com/PeterK78/Z2X-Programmer)</li><br>
 ///   A relatively new programming tool that is still in its early stages, but
 ///   already works very well.
+///   <li>... and probably many more</li><br>
 ///   </ul>
 /// - <b class="tab-title">Planned</b>
 ///   \image{inline} html square_wave.svg width=16px
@@ -178,10 +188,9 @@
 /// This also means that the PCBs can only subjected to a visual inspection and
 /// not a functional test. However, I also had all of my \ref page_history
 /// "prototypes" manufactured at PCBWay and have not had a single soldering
-/// error in over 10 orders.
+/// error in over a dozen orders.
 ///
-/// \todo
-/// Picture of packed boards here?
+/// \image html pcbway_bazaar.png width=640px
 ///
 /// \subsection subsection_getting_started_or_manufacture ...or Manufacture One
 /// If you don't fancy buying from PCBWay, you are welcome to manufacture your
@@ -200,7 +209,7 @@
 /// (obviously) are
 /// - A DC power supply (10-22V)
 /// - A [USB-C](https://en.wikipedia.org/wiki/USB-C) cable
-/// - A Linux or Windows computer with a free USB port
+/// - A Windows or Linux computer with a free USB port
 ///
 /// Supply the board with power and plug in the USB-C cable. The **red LED**
 /// under the&nbsp; \image{inline} html power.svg width=16px &nbsp;symbol on the
@@ -237,18 +246,18 @@
 /// \page page_getting_started Getting Started
 /// \details \tableofcontents
 /// <div class="tabbed">
-/// - <b class="tab-title">Linux</b>
-///   - Download and extract `Flasher-*.*.*-Linux-x64.zip`
-///   - Make `Flasher.sh` executable by running `chmod +x Flasher.sh`
-///   - Run `Flasher.sh`
+/// - <b class="tab-title">Windows</b>
+///   - Download and extract `Flasher-*.*.*-Windows-x64.zip`
+///   - Run `Flasher.bat`
 ///   - Click the `Download latest firmware` \image{inline} html network_drive.svg width=24px button
 ///   - Wait until the display shows `Done`
 ///   - Click the `Start` \image{inline} html play.svg width=24px button
 ///   - Wait until the display shows `Done` again
 ///   - Press the EN button on the board to reboot
-/// - <b class="tab-title">Windows</b>
-///   - Download and extract `Flasher-*.*.*-Windows-x64.zip`
-///   - Run `Flasher.bat`
+/// - <b class="tab-title">Linux</b>
+///   - Download and extract `Flasher-*.*.*-Linux-x64.zip`
+///   - Make `Flasher.sh` executable by running `chmod +x Flasher.sh`
+///   - Run `Flasher.sh`
 ///   - Click the `Download latest firmware` \image{inline} html network_drive.svg width=24px button
 ///   - Wait until the display shows `Done`
 ///   - Click the `Start` \image{inline} html play.svg width=24px button
@@ -295,6 +304,8 @@
 /// - Connect to `OpenRemise`
 /// - Open a web browser and go to `remise.local`
 /// - Change the WiFi settings
+///   - Optionally change mDNS (restricted to `(.+\.)?remise`, so for example
+///   `vincents.remise`)
 /// - Click `Save and restart`
 ///
 /// The following clip shows me performing these steps on my smartphone.
@@ -305,6 +316,11 @@
 /// <div class="caption">Changing WiFi settings from a smartphone</div>
 /// </div>
 /// \endhtmlonly
+///
+/// \note
+/// Clicking on the arrow next to "Networks" opens a list of all the networks
+/// found, including signal strength and open/closed status. If the network is
+/// password protected, a small lock symbol will appear next to it.
 ///
 /// <div class="section_buttons">
 /// | Previous   | Next              |
@@ -321,15 +337,15 @@
 /// \section section_faq_support Where to get support?
 /// Developers are only human and software may contain bugs. If you encounter
 /// any problems, please consider **in the following order** to either
-/// - open an issue at [GitHub](https://github.com/OpenRemise)
-/// - ask in one of the following forum threads
+/// - Open an issue on [GitHub](https://github.com/OpenRemise)
+/// - Ask in one of the following forum threads
 ///   - https://www.stummiforum.de/
 ///   - https://www.1zu160.net/scripte/forum/index.php
 ///   - https://forum.opendcc.de
 ///   - https://www.rmweb.co.uk/forums/
 ///   - https://www.h0-modellbahnforum.de/
 ///   - https://www.kleinbahnsammler.at/wbb2/
-/// - or, **after you have already exhausted the other options**, contact me at
+/// - Or, **after you have already exhausted the other options**, contact me at
 ///   vincent.hamp@openremise.at
 ///
 /// \section section_faq_contribute How can I get involved?
