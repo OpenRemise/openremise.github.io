@@ -356,12 +356,19 @@
 /// any problems, please consider **in the following order** to either
 /// - Open an issue on [GitHub](https://github.com/OpenRemise)
 /// - Ask in one of the following forum threads
-///   - https://www.stummiforum.de/
-///   - https://www.1zu160.net/scripte/forum/index.php
-///   - https://forum.opendcc.de
-///   - https://www.rmweb.co.uk/forums/
-///   - https://www.h0-modellbahnforum.de/
-///   - https://www.kleinbahnsammler.at/wbb2/
+///   - English
+///     -
+///     [rmweb.co.uk/forums](https://www.rmweb.co.uk/forums/topic/191684-openremise-new-open-source-command-station-programmer)
+///   - German
+///     -
+///     [stummiforum.de](https://www.stummiforum.de/t233609f7-OpenRemise-Neue-Open-Source-Zentrale-Programmer.html)
+///     -
+///     [1zu160.net](https://www.1zu160.net/scripte/forum/forum_show.php?id=1445126)
+///     -
+///     [h0-modellbahnforum.de](https://www.h0-modellbahnforum.de/t352524f19606-OpenRemise-Neue-Open-Source-Zentrale-Programmer.html)
+///     - [forum.opendcc.de](https://forum.opendcc.de/viewtopic.php?t=10524)
+///     -
+///     [kleinbahnsammler.at](https://www.kleinbahnsammler.at/wbb2/index.php?thread/32730-openremise-neue-open-source-zentrale-programmer/)
 /// - Or, **after you have already exhausted the other options**, contact me at
 ///   vincent.hamp@openremise.at
 ///
