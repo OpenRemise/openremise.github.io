@@ -233,21 +233,23 @@
 /// actually in boot mode. If it turns out later that it isn't, you can repeat
 /// the process at any time without worrying about breaking anything.
 ///
+/// \note
+/// Some Windows users have reported that it only worked for them if they
+/// **first put the board into the bootloader** and only then plugged in the
+/// USB-C cable.
+///
 /// \subsection subsection_getting_started_flasher Upload the Firmware
 /// To flash the firmware onto a factory new board there is a small tool
 /// called... well, [Flasher](https://github.com/OpenRemise/Flasher). It is
-/// available for both Windows and Linux operating systems. The latest release
-/// can always be downloaded at the following link.<br>
-/// https://github.com/OpenRemise/Flasher/releases/latest
-///
-/// Please select your operating system and follow the steps.
+/// available for both Windows and Linux operating systems. Please select your
+/// operating system and follow the steps.
 ///
 // clang-format off
 /// \page page_getting_started Getting Started
 /// \details \tableofcontents
 /// <div class="tabbed">
 /// - <b class="tab-title">Windows</b>
-///   - Download and extract `Flasher-*.*.*-Windows-x64.zip`
+///   - Download and extract [Flasher-0.1.0-Windows-x64.zip](https://github.com/OpenRemise/Flasher/releases/download/v0.1.0/Flasher-0.1.0-Windows-x64.zip)
 ///   - Run `Flasher.bat`
 ///   - Click the `Download latest firmware` \image{inline} html network_drive.svg width=24px button
 ///   - Wait until the display shows `Done`
@@ -255,7 +257,7 @@
 ///   - Wait until the display shows `Done` again
 ///   - Press the EN button on the board to reboot
 /// - <b class="tab-title">Linux</b>
-///   - Download and extract `Flasher-*.*.*-Linux-x64.zip`
+///   - Download and extract [Flasher-0.1.0-Linux-x64.zip](https://github.com/OpenRemise/Flasher/releases/download/v0.1.0/Flasher-0.1.0-Linux-x64.zip)
 ///   - Make `Flasher.sh` executable by running `chmod +x Flasher.sh`
 ///   - Run `Flasher.sh`
 ///   - Click the `Download latest firmware` \image{inline} html network_drive.svg width=24px button
