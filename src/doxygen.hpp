@@ -420,6 +420,19 @@
 /// \page page_faq FAQ
 /// \details \tableofcontents
 ///
+/// \section section_faq_usb How to install the "ZIMO Interface" USB driver?
+/// If you want to use an OpenRemise board with
+/// [ZSP](https://www.zimo.at/web2010/products/zsp_zimo-sound-programmer.htm)
+/// you have to install the official ZIMO Interface USB driver. Please download
+/// the [ZIMO_Interface.inf](./ZIMO_Interface.inf) file and follow the video
+/// description.
+/// \htmlonly
+/// <div class="image">
+/// <iframe width="606" height="462" src="install_usb_driver.webm"></iframe>
+/// <div class="caption">Installing the "ZIMO Interface" usb driver</div>
+/// </div>
+/// \endhtmlonly
+///
 /// \section section_faq_captive_portal How to reopen the captive portal?
 /// If the board can no longer log into your WiFi for some reason, e.g. because
 /// the password has been changed or you made a typo in the captive portal, you

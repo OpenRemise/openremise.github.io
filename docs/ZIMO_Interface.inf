@@ -1,0 +1,60 @@
+;**************************************************
+;*                                                *
+;* iarport.inf - Virtual COM Port to USB          *
+;* Driver for Windows NT family                   *
+;*                                                *
+;* Copyright 2009 IAR Systems/ZIMO 2014           *
+;*                                                *
+;**************************************************
+[Version]
+Signature="$Windows NT$"
+Class=Ports
+ClassGUID={4d36e978-e325-11ce-bfc1-08002be10318}
+Provider=%IAR%
+DriverVer=01/12/2015,1.0.0.3
+CatalogFile=zimo.cat
+
+[SourceDisksFiles]
+
+[SourceDisksNames]
+
+[Manufacturer]
+%IAR%=ZIMO_Systems,NTx86,NTamd64
+
+[ZIMO_Systems.NTx86]
+%IAR_CDC&PID_81C1%=IarVirCOM,USB\VID_1FC9&PID_81C1
+
+[ZIMO_Systems.NTamd64]
+%IAR_CDC&PID_81C1%=IarVirCOM,USB\VID_1FC9&PID_81C1
+
+;**************************************************
+;*   Windows NT family                            *
+;**************************************************
+[IarVirCOM.NT]
+include=mdmcpq.inf
+CopyFiles=FakeModemCopyFileSection
+AddReg=IarVirCOM.NT.AddReg
+
+[IarVirCOM.NT.AddReg]
+HKR,,DevLoader,,*ntkern
+HKR,,NTMPDriver,,usbser.sys
+HKR,,EnumPropPages32,,"MsPorts.dll,SerialPortPropPageProvider"
+
+[IarVirCOM.NT.Services]
+AddService=usbser, 0x00000002,IarVirCOMService_Inst
+
+[IarVirCOMService_Inst]
+DisplayName=%IarVirCOM.SvcDesc%
+ServiceType=1
+StartType=3
+ErrorControl=1
+ServiceBinary=%12%\usbser.sys
+LoadOrderGroup=Base
+
+;**************************************************
+;* Strings                                        *
+;**************************************************
+[Strings]
+IAR="ZIMO Elektronik"
+IAR_CDC&PID_81C1="ZIMO Interface"
+IarVirCOM.SvcDesc="ZIMO Elektronik"
