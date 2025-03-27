@@ -181,27 +181,35 @@
 /// \details \tableofcontents
 ///
 /// \section section_getting_started_buy_a_board Buy a Board
-/// Fully assembled boards can be purchased at the
-/// [Bazaar](https://www.pcbway.com/project/gifts_list.html?itemsboxid=15&sortid=1&stock=0)
-/// section in the [PCBWay store](https://www.pcbway.com/project/gifts.html).
+/// Not everyone is able to have printed circuit boards manufactured by a PCB
+/// prototype service. For this reason, a small contingent of boards is
+/// available at the [PCBWay
+/// Bazaar](https://www.pcbway.com/project/gifts_list.html?itemsboxid=15&sortid=1&stock=0),
+/// a marketplace service specifically for hobbyists and DIY enthusiasts.
+///
+/// The following OpenRemise boards can currently be ordered:
+/// -
+/// [S3Main](https://www.pcbway.com/project/gifts_detail/OpenRemise_S3Main_d6e7576a.html)
+///
 /// Please note that these boards do not contain any software when delivered.
 /// This also means that the PCBs can only subjected to a visual inspection and
 /// not a functional test. However, I also had all of my \ref page_history
 /// "prototypes" manufactured at PCBWay and have not had a single soldering
 /// error in over a dozen orders.
 ///
-/// \image html pcbway_bazaar.png width=640px
+/// \image html pcbway_bazaar.png "\"S3Main\" on the PCBWay Bazaar" width=640px
 ///
 /// \subsection subsection_getting_started_or_manufacture ...or Manufacture One
-/// If you don't fancy buying from PCBWay, you are welcome to manufacture your
-/// own board at any other PCB service, e.g.
+/// If you don't fancy buying from PCBWay and you know your way around Gerber
+/// files, you are welcome to manufacture your own hardware at any other PCB
+/// prototype service, e.g.
 /// - [JLCPCB](https://jlcpcb.com)
 /// - [Pcbcart](https://www.pcbcart.com)
 /// - [Eurocircuits](https://www.eurocircuits.com)
 /// - and so forth...
 ///
-/// The [KiCad](https://www.kicad.org) project with all Gerber files can be
-/// found on [GitHub](https://github.com/OpenRemise/S3Main).
+/// The [KiCad](https://www.kicad.org) projects with all Gerber files can be
+/// found on [GitHub](https://github.com/OpenRemise).
 ///
 /// \section section_getting_started_install Install the Firmware
 /// Flashing the firmware for the first time is easier than with many
