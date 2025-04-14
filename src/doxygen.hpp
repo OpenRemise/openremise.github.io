@@ -314,8 +314,8 @@
 /// - Connect to `OpenRemise`
 /// - Open a web browser and go to `remise.local`
 /// - Change the WiFi settings
-///   - Optionally change mDNS (restricted to `(.+\.)?remise`, so for example
-///   `vincents.remise`)
+///   - Optionally change mDNS (restricted to `[^\.]*remise`, so for example
+///   `vincents-remise`)
 /// - Click `Save and restart`
 ///
 /// The following clip shows me performing these steps on my smartphone.
