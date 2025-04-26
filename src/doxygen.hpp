@@ -257,7 +257,7 @@
 /// \details \tableofcontents
 /// <div class="tabbed">
 /// - <b class="tab-title">Windows</b>
-///   - Download and extract [Flasher-0.1.0-Windows-x64.zip](https://github.com/OpenRemise/Flasher/releases/download/v0.1.0/Flasher-0.1.0-Windows-x64.zip)
+///   - Download and extract [Flasher-0.1.0-Windows-x64.zip](https://github.com/OpenRemise/Flasher/releases/download/v0.1.1/Flasher-0.1.1-Windows-x64.zip)
 ///   - Run `Flasher.bat`
 ///   - Click the `Download latest firmware` \image{inline} html network_drive.svg width=24px button
 ///   - Wait until the display shows `Done`
@@ -265,7 +265,7 @@
 ///   - Wait until the display shows `Done` again
 ///   - Press the EN button on the board to reboot
 /// - <b class="tab-title">Linux</b>
-///   - Download and extract [Flasher-0.1.0-Linux-x64.zip](https://github.com/OpenRemise/Flasher/releases/download/v0.1.0/Flasher-0.1.0-Linux-x64.zip)
+///   - Download and extract [Flasher-0.1.0-Linux-x64.zip](https://github.com/OpenRemise/Flasher/releases/download/v0.1.1/Flasher-0.1.1-Linux-x64.zip)
 ///   - Make `Flasher.sh` executable by running `chmod +x Flasher.sh`
 ///   - Run `Flasher.sh`
 ///   - Click the `Download latest firmware` \image{inline} html network_drive.svg width=24px button
@@ -457,6 +457,20 @@
 /// | 1.3         | [Z scale](https://en.wikipedia.org/wiki/Z_scale)   |
 /// | 2.7         | [N scale](https://en.wikipedia.org/wiki/N_scale)   |
 /// | 4.1         | [H0 scale](https://en.wikipedia.org/wiki/HO_scale) |
+///
+/// \section section_cases I'm looking for a case?
+/// The first support case is already available, it has been created by the user
+/// [TiffyHH](https://www.thingiverse.com/tiffyhh/designs) on
+/// [thingiverse](https://www.thingiverse.com). I'm hoping more will follow.
+/// \emoji :blush:
+///
+// clang-format off
+/// \page page_faq FAQ
+/// \details \tableofcontents
+/// \image html https://cdn.thingiverse.com/assets/ab/c1/3e/df/f3/large_display_IMG_20250424_153304.jpg "Support (Case)" width=480px
+// clang-format on
+/// \page page_faq FAQ
+/// \details \tableofcontents
 ///
 /// \section section_faq_decup Why doesn't the ZIMO decoder update work?
 /// This can have different reasons depending on the decoder type:
