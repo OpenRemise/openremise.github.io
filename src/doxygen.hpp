@@ -312,7 +312,7 @@
 /// The following steps are necessary to change the settings.
 /// - Search for new WiFi networks
 /// - Connect to `OpenRemise`
-/// - Open a web browser and go to `remise.local`
+/// - Open a web browser and go to `remise.local` (or `192.168.4.1`)
 /// - Change the WiFi settings
 ///   - Optionally change mDNS (restricted to `[^\.]*remise`, so for example
 ///   `vincents-remise`)
@@ -339,8 +339,8 @@
 /// html wifi.svg width=16px &nbsp;symbol **lights up** as soon as a connection
 /// is established.
 ///
-/// From this point on, the web interface will be available at the local
-/// [mDNS](https://en.wikipedia.org/wiki/Multicast_DNS) address (e.g.
+/// From this point on, the web interface ~~will~~ should be available at the
+/// local [mDNS](https://en.wikipedia.org/wiki/Multicast_DNS) address (e.g.
 /// `http://remise.local`).
 ///
 /// \warning
@@ -349,6 +349,32 @@
 /// accessing this page and ask for explicit permission to access it. To prevent
 /// this from happening again on every visit, it is recommended to add an
 /// exception.
+///
+/// \subsection subsection_getting_started_via_mdns ...via mDNS
+/// Wait, should? Well, the situation is... complicated. Although all modern
+/// browsers support mDNS, they rely on services within the operating system.
+/// Unfortunately, this support is limited on **Android** and completely absent
+/// from **Windows10**.
+///
+// clang-format off
+/// \page page_getting_started Getting Started
+/// \details \tableofcontents
+/// | Operating System  | mDNS Support  | Notes                                                                                                                                   |
+/// | ----------------- | ------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+/// | **Linux**         | Yes           | Requires `avahi-daemon` (usually installed by default on major distros).                                                                |
+/// | **macOS**         | Yes           | Uses Bonjour                                                                                                                            |
+/// | **Windows 10/11** | Yes (partial) | Only if Bonjour or other mDNS responder is installed (e.g., via iTunes, Adobe CC, or manually). Windows 11 has improved native support. |
+/// | **Android**       | Partial       | mDNS is supported at the app level via `NsdManager`, but **not integrated system-wide**.                                                |
+/// | **iOS/iPadOS**    | Yes           | Bonjour-based                                                                                                                           |
+// clang-format on
+/// \page page_getting_started Getting Started
+/// \details \tableofcontents
+///
+/// \subsection subsection_getting_started_via_ip  ...via IP
+/// If you have problems connecting via mDNS, I recommend setting up a static
+/// [IP address]((https://en.wikipedia.org/wiki/IP_address)) as described in
+/// chapter \ref section_getting_started_wifi. Instead of `remise.local`, you
+/// would then type e.g. `192.168.0.4` into the browser's address bar.
 ///
 /// <div class="section_buttons">
 /// | Previous   | Next              |
