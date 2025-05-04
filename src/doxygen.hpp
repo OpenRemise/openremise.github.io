@@ -316,6 +316,7 @@
 /// - Change the WiFi settings
 ///   - Optionally change mDNS (restricted to `[^\.]*remise`, so for example
 ///   `vincents-remise`)
+///   - Optionally set a static IP address
 /// - Click `Save and restart`
 ///
 /// The following clip shows me performing these steps on my smartphone.
@@ -412,6 +413,17 @@
 /// \page page_faq FAQ
 /// \details \tableofcontents
 ///
+/// \section section_faq_bad_wifi What can I do about a bad WiFi connection?
+/// The OpenRemise boards use a small onboard antenna mounted directly on the
+/// PCB. These antennas don't have particularly good performance
+/// characteristics. Therefore, it's important that the network signal strength
+/// is as high as possible. The signal strength (RSSI or <b>r</b>eceived
+/// <b>s</b>ignal <b>s</b>trength <b>i</b>ndicator) can be read on the info
+/// screen in the web interface and should be **at least 60%**. If the
+/// connection times out from time to time despite a good signal strength, it
+/// may be helpful to check the Bluetooth devices in the area for possible
+/// interference.
+///
 /// \section section_faq_z21_app How to connect using the Z21 app?
 /// Unfortunately, the [Z21 app](https://www.z21.eu/en/products/z21-app)
 /// currently does not support mDNS resolution but requires the manual entry of
@@ -450,7 +462,8 @@
 /// in the \ref section_getting_started_wifi "Getting Started" Guide.
 ///
 /// \section section_faq_current_limit Which current limit is right for me?
-/// As a rule of thumb, we recommend the following settings.
+/// As a rule of thumb, we recommend the following settings for normal
+/// operation.
 /// | Current [A] | Nominal size                                       |
 /// | ----------- | -------------------------------------------------- |
 /// | 0.5         | Service mode                                       |
