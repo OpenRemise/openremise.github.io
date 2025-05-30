@@ -497,24 +497,6 @@
 /// | 2.7         | [N scale](https://en.wikipedia.org/wiki/N_scale)   |
 /// | 4.1         | [H0 scale](https://en.wikipedia.org/wiki/HO_scale) |
 ///
-/// \section section_cases I'm looking for a case?
-/// The first support case is already available, it has been created by the user
-/// [TiffyHH](https://www.thingiverse.com/tiffyhh/designs) (or
-/// [vbh](https://www.1zu160.net/scripte/nliste/detail.php?id=17819&fid=1445126)
-/// on [1zu160.net](https://www.1zu160.net)). I'm hoping more will follow.
-/// \emoji :blush:
-///
-/// - [Support (Case) for OpenRemise - Remix @
-/// thingiverse.com](https://www.thingiverse.com/thing:7020922)
-///
-// clang-format off
-/// \page page_faq FAQ
-/// \details \tableofcontents
-/// \image html https://cdn.thingiverse.com/assets/ab/c1/3e/df/f3/large_display_IMG_20250424_153304.jpg "Support (Case) for OpenRemise - Remix" width=480px
-// clang-format on
-/// \page page_faq FAQ
-/// \details \tableofcontents
-///
 /// \section section_faq_decup Why doesn't the ZIMO decoder update work?
 /// This can have different reasons depending on the decoder type:
 /// - For MN- and MS decoders, any energy storage in the decoder must be
@@ -539,6 +521,30 @@
 /// # hosts: mymachines mdns_minimal [NOTFOUND=return] resolve [!UNAVAIL=return] files myhostname dns
 /// hosts: mymachines mdns4_minimal [NOTFOUND=return] resolve [!UNAVAIL=return] files myhostname dns
 /// ```
+// clang-format on
+/// \page page_faq FAQ
+/// \details \tableofcontents
+///
+/// \section section_cases I'm looking for a case?
+/// Don’t worry, you’re apparently not alone in this wish. \emoji :blush:
+///
+// clang-format off
+/// \page page_faq FAQ
+/// \details \tableofcontents
+/// - [Acryl case by the user 12mm @ opendcc.de](https://forum.opendcc.de/viewtopic.php?p=115582#p115582)<br>
+/// Not everyone will have the opportunity for laser cutting, but if that isn't beautiful then I don't know what is.
+/// \image html case_12mm.jpg "Lasercut acryl case" width=480px
+/// Download [DXF file](case_12mm.dxf)<br><br>
+///
+/// - [3D printed case by the user ET-440 @ stummiforum.de](https://www.stummiforum.de/t233609f7-OpenRemise-Neue-Open-Source-Zentrale-Programmer-1.html#msg2818168)<br>
+/// This case that can be closed with 4x 16mm M3 screws. If you don't own a printer yourself, you can order it from [3d-druck-amann.de](https://3d-druck-amann.de).
+/// \image html case_et-440.jpeg "3D printed housing" width=480px
+/// Download [STEP file](case_et-440.zip)<br><br>
+///
+/// - [Support (Case) for OpenRemise - Remix by the user vhb @ 1zu160.de](https://www.1zu160.net/scripte/nliste/detail.php?id=17819&fid=1455763)<br>
+/// Sometimes all you need is a stand, especially useful for developers.
+/// \image html https://cdn.thingiverse.com/assets/ab/c1/3e/df/f3/large_display_IMG_20250424_153304.jpg "Support (Case) for OpenRemise - Remix" width=480px
+/// Download https://www.thingiverse.com/thing:7020922<br><br>
 // clang-format on
 /// \page page_faq FAQ
 /// \details \tableofcontents
