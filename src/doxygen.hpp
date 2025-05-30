@@ -532,12 +532,15 @@
 /// \page page_faq FAQ
 /// \details \tableofcontents
 /// - [Acryl case by the user 12mm @ opendcc.de](https://forum.opendcc.de/viewtopic.php?p=115582#p115582)<br>
-/// Not everyone will have the opportunity for laser cutting, but if that isn't beautiful then I don't know what is.
+/// Not everyone will have the opportunity for laser cutting, but if that isn't
+/// beautiful then I don't know what is.
 /// \image html case_12mm.jpg "Lasercut acryl case" width=480px
 /// Download [DXF file](case_12mm.dxf)<br><br>
 ///
 /// - [3D printed case by the user ET-440 @ stummiforum.de](https://www.stummiforum.de/t233609f7-OpenRemise-Neue-Open-Source-Zentrale-Programmer-1.html#msg2818168)<br>
-/// This case that can be closed with 4x 16mm M3 screws. If you don't own a printer yourself, you can order it from [3d-druck-amann.de](https://3d-druck-amann.de).
+/// A fully enclosed case that protects the circuit board very well. It is
+/// secured with four 16mm M3 screws. Unfortunately, it obscures the LEDs. If
+/// you don't own a printer yourself, you can order it from [3d-druck-amann.de](https://3d-druck-amann.de).
 /// \image html case_et-440.jpeg "3D printed housing" width=480px
 /// Download [STEP file](case_et-440.zip)<br><br>
 ///
