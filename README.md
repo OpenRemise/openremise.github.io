@@ -19,8 +19,8 @@
 ## Documentation
 ### openremise
 - Introduction :negative_squared_cross_mark:
-- Getting Started :negative_squared_cross_mark:
-- FAQ :negative_squared_cross_mark:
+- Getting Started :ballot_box_with_check:
+- FAQ :ballot_box_with_check:
 - History :ballot_box_with_check:
 
 ### Firmware
@@ -31,32 +31,34 @@
   - Architecture :ballot_box_with_check:
   - Control Flow :negative_squared_cross_mark:
 - API Reference :ballot_box_with_check:
-  - Analog :ballot_box_with_check:
-  - DCC :negative_squared_cross_mark:
-  - DECUP :negative_squared_cross_mark:
-  - LED :negative_squared_cross_mark:
-  - HTTP :negative_squared_cross_mark:
-  - mDNS :negative_squared_cross_mark:
-  - MDU :negative_squared_cross_mark:
-  - Memory :ballot_box_with_check:
-  - OTA :negative_squared_cross_mark:
-  - Out :negative_squared_cross_mark:
-  - Trace :negative_squared_cross_mark:
-  - UDP :negative_squared_cross_mark:
-  - USB :negative_squared_cross_mark:
-  - WiFi :negative_squared_cross_mark:
-  - Z21 :negative_squared_cross_mark:
-  - ZUSI :negative_squared_cross_mark:
+  - Interfaces
+    - HTTP :negative_squared_cross_mark:
+    - mDNS :ballot_box_with_check:
+    - UDP :negative_squared_cross_mark:
+    - USB :ballot_box_with_check:
+  - Middlewares
+    - DCC :negative_squared_cross_mark:
+    - OTA :negative_squared_cross_mark:
+    - Z21 :negative_squared_cross_mark:
+    - ZIMO :negative_squared_cross_mark:
+  - Drivers
+    - Analog :ballot_box_with_check:
+    - LED :ballot_box_with_check:
+    - Out :negative_squared_cross_mark:
+    - Trace :negative_squared_cross_mark:
+    - WiFi :negative_squared_cross_mark:
+  - Memory
+    - NVS :ballot_box_with_check:
 - HW Reference :negative_squared_cross_mark:
 
 ### Frontend
 - Introduction :ballot_box_with_check:
-- Getting Started :negative_squared_cross_mark:
+- Getting Started :ballot_box_with_check:
   - Development :ballot_box_with_check:
-  - Configuration :negative_squared_cross_mark:
+  - Configuration :ballot_box_with_check:
   - Architecture :ballot_box_with_check:
-- API Reference :negative_squared_cross_mark:
-  - Constants :negative_squared_cross_mark:
+- API Reference :ballot_box_with_check:
+  - Constants :ballot_box_with_check:
   - Models :negative_squared_cross_mark:
   - Providers :negative_squared_cross_mark:
   - Screens :negative_squared_cross_mark:

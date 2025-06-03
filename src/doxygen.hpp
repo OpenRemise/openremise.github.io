@@ -282,12 +282,18 @@
 /// Depending on the baud rate, uploading the firmware may take **a few
 /// minutes**.
 ///
+// clang-format off
+/// \page page_getting_started Getting Started
+/// \details \tableofcontents
 /// \htmlonly
 /// <div class="image">
-/// <iframe width="360" height="480" src="install_the_firmware.webm"></iframe>
+/// <iframe width="360" height="480" src="install_the_firmware.webm" title="Flashing the firmware using the \"Flasher\" tool" allow="picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 /// <div class="caption">Flashing the firmware using the "Flasher" tool</div>
 /// </div>
 /// \endhtmlonly
+// clang-format on
+/// \page page_getting_started Getting Started
+/// \details \tableofcontents
 ///
 /// \note
 /// If the device from which the update is to be performed does not have
@@ -321,12 +327,18 @@
 ///
 /// The following clip shows me performing these steps on my smartphone.
 ///
+// clang-format off
+/// \page page_getting_started Getting Started
+/// \details \tableofcontents
 /// \htmlonly
 /// <div class="image">
-/// <iframe width="286" height="640" src="captive_portal.webm"></iframe>
+/// <iframe width="286" height="640" src="captive_portal.webm" title="Changing WiFi settings from a smartphone" allow="picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 /// <div class="caption">Changing WiFi settings from a smartphone</div>
 /// </div>
 /// \endhtmlonly
+// clang-format on
+/// \page page_getting_started Getting Started
+/// \details \tableofcontents
 ///
 /// \note
 /// Clicking on the arrow next to "Networks" opens a list of all the networks
@@ -400,7 +412,7 @@
 ///     -
 ///     [stummiforum.de](https://www.stummiforum.de/t233609f7-OpenRemise-Neue-Open-Source-Zentrale-Programmer.html)
 ///     -
-///     [1zu160.net](https://www.1zu160.net/scripte/forum/forum_show.php?id=1445126)
+///     [1zu160.net](https://www.1zu160.net/scripte/forum/forum_show.php?id=1459155)
 ///     -
 ///     [h0-modellbahnforum.de](https://www.h0-modellbahnforum.de/t352524f19606-OpenRemise-Neue-Open-Source-Zentrale-Programmer.html)
 ///     - [forum.opendcc.de](https://forum.opendcc.de/viewtopic.php?t=10524)
@@ -472,12 +484,18 @@
 /// you have to install the official ZIMO Interface USB driver. Please download
 /// the [ZIMO_Interface.inf](./ZIMO_Interface.inf) file and follow the video
 /// description.
+// clang-format off
+/// \page page_faq FAQ
+/// \details \tableofcontents
 /// \htmlonly
 /// <div class="image">
-/// <iframe width="606" height="462" src="install_usb_driver.webm"></iframe>
-/// <div class="caption">Installing the "ZIMO Interface" usb driver</div>
+/// <iframe width="606" height="462" src="install_usb_driver.webm" title="Installing the \"ZIMO Interface\" USB driver" allow="picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+/// <div class="caption">Installing the "ZIMO Interface" USB driver</div>
 /// </div>
 /// \endhtmlonly
+// clang-format on
+/// \page page_faq FAQ
+/// \details \tableofcontents
 ///
 /// \section section_faq_captive_portal How to reopen the captive portal?
 /// If the board can no longer log into your WiFi for some reason, e.g. because
@@ -553,9 +571,39 @@
 /// \details \tableofcontents
 ///
 /// <div class="section_buttons">
-/// | Previous                  | Next              |
-/// | :------------------------ | ----------------: |
-/// | \ref page_getting_started | \ref page_history |
+/// | Previous                  | Next             |
+/// | :------------------------ | ---------------: |
+/// | \ref page_getting_started | \ref page_videos |
+/// </div>
+
+/// \page page_videos Videos
+///
+/// \section section_videos_english English \emoji :gb:
+// clang-format off
+/// \page page_videos Videos
+/// \details
+/// \htmlonly
+/// <iframe width="480" height="270" src="https://www.youtube.com/embed/wfi0bsJeZnY" title="Getting Started with an S3Main" allow="picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+/// \endhtmlonly
+// clang-format on
+/// \page page_videos Videos
+/// \details
+///
+/// \section section_videos_german German \emoji :de:
+// clang-format off
+/// \page page_videos Videos
+/// \details
+/// \htmlonly
+/// <iframe width="480" height="270" src="https://www.youtube.com/embed/VNWBDyTOREM" title="Erste Schritte mit einem S3Main" allow="picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+/// \endhtmlonly
+// clang-format on
+/// \page page_videos Videos
+/// \details
+///
+/// <div class="section_buttons">
+/// | Previous      | Next              |
+/// | :------------ | ----------------: |
+/// | \ref page_faq | \ref page_history |
 /// </div>
 
 /// \page page_history History
@@ -636,7 +684,7 @@
 /// still a long way off at the time...
 ///
 /// <div class="section_buttons">
-/// | Previous      |
-/// | :------------ |
-/// | \ref page_faq |
+/// | Previous         |
+/// | :--------------- |
+/// | \ref page_videos |
 /// </div>
