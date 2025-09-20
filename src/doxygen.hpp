@@ -86,20 +86,18 @@
 ///   \image{inline} html 3rd_party.svg width=16px
 ///   **3rd party
 ///   support**<br>
-///   The WiFi and USB interfaces allow a variety of 3rd party support. For
-///   example, OpenRemise can be used with the following apps
+///   The WiFi and USB interfaces allow a variety of 3rd party support. Here is
+///   a certainly not complete list of software that can be used with
+///   OpenRemise.
+///
+///   **Decoder configuration**
 ///   <ul>
-///   <li>[Z21 App](https://www.z21.eu/en/products/z21-app)</li><br>
-///   The well-known Z21 app from [ROCO](https://www.roco.cc/ren) is fully
-///   supported. Among other things, it allows you to control locomotives,
-///   create layouts and also program CVs.
-///   <li>[JMRI](https://www.jmri.org)</li><br>
-///   Probably needs no introduction. Every model railroader's favorite set of
-///   tools. Can do everything, maybe not very beginner-friendly.
+///   <li>[JMRI
+///   DecoderPro](https://www.jmri.org/help/en/html/apps/DecoderPro/index.shtml)</li><br>
+///   Probably needs no introduction. Can do everything, maybe not very
+///   beginner-friendly.
 ///   <li>[ZCS](https://www.beathis.ch/zcs/index.html)</li><br>
 ///   A CV programming tool specifically for ZIMO decoders.
-///   <li>[Rocrail](https://wiki.rocrail.net)</li><br>
-///   Cross-platform software for controlling layouts.
 ///   <li>[ZIMO
 ///   ZSP](https://www.zimo.at/web2010/products/zsp_zimo-sound-programmer_EN.htm)</li><br>
 ///   The ZIMO Sound Programmer, used to create, preview and modify sound
@@ -107,19 +105,46 @@
 ///   <li>[Z2X-Programmer](https://github.com/PeterK78/Z2X-Programmer)</li><br>
 ///   A relatively new programming tool that is still in its early stages, but
 ///   already works very well.
-///   <li>... and probably many more</li><br>
+///   </ul>
+///
+///   <br>
+///   **Layout control**
+///   <ul>
+///   <li>[Rocrail](https://wiki.rocrail.net)</li><br>
+///   Free and cross-platform.
+///   <li>[iTrain](https://www.berros.eu)</li><br>
+///   Cross-platform software, reasonable priced.
+///   <li>[TrainController](https://www.freiwald.com/pages/traincontroller.htm)</li><br>
+///   Windows only, very expensive.
+///   </ul>
+///
+///   <br>
+///   **Mobile**
+///   <ul>
+///   <li>[Z21 App](https://www.z21.eu/en/products/z21-app)</li><br>
+///   The well-known Z21 app from [ROCO](https://www.roco.cc/ren) is fully
+///   supported. Among other things, it allows you to control locomotives,
+///   create layouts and also program CVs. Unfortunately, the app has recently
+///   become chargeable for third-party devices at 19,99€.
+///   <li>[RailBOX: Railroad
+///   Control](https://play.google.com/store/apps/details?id=com.railbox.railroadcontrol&hl=en)</li><br>
+///   Limited free edition, premium upgrade at 4,39€.
+///   <li>[DigiTrainsPRO](https://digitrainspro.hu)</li><br>
+///   Limited free edition, premium subscription model only.
 ///   </ul>
 /// - <b class="tab-title">Planned</b>
 ///   \image{inline} html square_wave.svg width=16px
 ///   **DCC**<br>
-///   DCC support isn't complete yet. First of all, accessory commands are not
-///   yet implemented.
-///   <br><br>
+///   DCC support isn't complete yet. Extended accessory decoders or the new
+///   [RCN-218](https://normen.railcommunity.de/RCN-218.pdf) automated logon are
+///   not currently supported. <br><br>
 ///   \image{inline} html system_update_alt.svg width=16px
 ///   **Decoder updates**<br>
-///   [tams elektronik](https://tams-online.de) has already provided information
-///   on their decoder update procedure. An implementation in the future is very
-///   likely. <br><br>
+///   I'm already in contact with the manufacturers [Doehler &
+///   Haass](https://doehler-haass.de), [tams
+///   elektronik](https://tams-online.de), and
+///   [train-o-matic](https://train-o-matic.com)... let's see what the future
+///   brings. <br><br>
 ///   \image{inline} html susi.svg width=16px
 ///   **SUSI**<br>
 ///   The hardware has a standard SUSI bus interface. It would be conceivable to
@@ -153,13 +178,6 @@
 ///   **Other track protocols**<br>
 ///   Contributions are welcome, but I will certainly not implement any track
 ///   protocol other than DCC.
-///   <br><br>
-///   \image{inline} html system_update_alt.svg width=16px
-///   **Decoder updates**<br>
-///   [Doehler & Haass](https://doehler-haass.de/cms) deserve an honorable
-///   mention here, as although they were keen to help with the implementation,
-///   but their update procedure cannot be implemented so easily due to
-///   technical limitations of the OpenRemise hardware.
 ///   <br><br>
 ///   \image{inline} html sine_wave.svg width=16px
 ///   **Analog operation**<br>
@@ -569,6 +587,19 @@
 // clang-format on
 /// \page page_faq FAQ
 /// \details \tableofcontents
+///
+/// \section section_service_mode Service mode is not working?
+/// Unfortunately, many manufacturers do not adhere to DCC standards and do not
+/// even manage to implement the service mode according to specifications. If
+/// you experience CV verify problems with a decoder, I would suggest increasing
+/// the number of programming packets in the settings and, if necessary,
+/// reducing the ACK current. Increasing the number of startup reset packets can
+/// also help if a decoder takes too long to boot.
+///
+/// \section section_or_update The web interface is acting up after the update?
+/// If the web interface starts acting up after an OpenRemise update, you should
+/// clear your browser cache. The browser simply doesn't recognize that the
+/// underlying application has changed.
 ///
 /// <div class="section_buttons">
 /// | Previous                  | Next             |
