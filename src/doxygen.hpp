@@ -440,9 +440,9 @@
 ///   vincent.hamp@openremise.at
 ///
 /// \section section_faq_contribute How can I get involved?
-/// OpenRemise is currently a one-man project, so **any contributions would be
-/// very welcome**. These can be made in a variety of ways, you don't have to be
-/// a software or electronics expert to help. You could report bugs you find,
+/// OpenRemise is chronically understaffed, so **any contributions would be very
+/// welcome**. These can be made in a variety of ways, you don't have to be a
+/// software or electronics expert to help. You could report bugs you find,
 /// write documentation or simply answer questions from other users in forums.
 /// Tutorials and/or blog posts would also be great! Of course, if you're a
 /// coding ninja \emoji :ninja:, I'm not opposed to that either. My own

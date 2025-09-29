@@ -7,8 +7,8 @@
     <tab type="pages" visible="yes" title="" intro=""/>
     <tab type="usergroup" title="Development" url="[none]">
       <tab type="user" url="https://openremise.at/Firmware" title="Firmware 🔗"/>
-      <tab type="user" url="https://openremise.at/Flasher" title="Flasher 🔗"/>
       <tab type="user" url="https://openremise.at/Frontend" title="Frontend 🔗"/>
+      <tab type="user" url="https://openremise.at/Flasher" title="Flasher 🔗"/>
     </tab>
     <tab type="topics" visible="yes" title="" intro=""/>
     <tab type="modules" visible="yes" title="" intro="">

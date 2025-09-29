@@ -1,5 +1,7 @@
 # openremise.github.io
 
+[![docs](https://github.com/OpenRemise/openremise.github.io/actions/workflows/docs.yml/badge.svg)](https://github.com/OpenRemise/openremise.github.io/actions/workflows/docs.yml) [![license](https://img.shields.io/github/license/OpenRemise/openremise.github.io)](https://github.com/OpenRemise/openremise.github.io/raw/master/LICENSE)
+
 <a href="https://openremise.at">
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://github.com/OpenRemise/.github/raw/master/data/icons/icon_dark.svg">
@@ -7,66 +9,39 @@
 </picture>
 </a>
 
-## TODOs
-### Firmware
-- Maybe useful for documentation?
-  - https://github.com/wireviz/WireViz
-  - https://hackaday.com/2024/03/11/share-your-projects-kicad-automations-and-pretty-renders/
-  - https://github.com/openscopeproject/InteractiveHtmlBom
-  - https://github.com/yaqwsx/PcbDraw
-  - https://yaqwsx.github.io/Pinion/
+openremise.github.io contains the source code for the [OpenRemise](https://openremise.at) website. It serves as the public landing page and information hub for the OpenRemise project, providing an introduction, a getting started guide and links to further documentation.
 
-## Documentation
-### openremise
-- Introduction :negative_squared_cross_mark:
-- Getting Started :ballot_box_with_check:
-- FAQ :ballot_box_with_check:
-- History :ballot_box_with_check:
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li><a href="#features">Features</a></li>
+    <li><a href="#getting-started">Getting Started</a></li>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#build">Build</a></li>
+      </ul>
+  </ol>
+</details>
 
-### Firmware
-- Introduction :ballot_box_with_check:
-- Getting Started :ballot_box_with_check:
-  - Development :ballot_box_with_check:
-  - Configuration :ballot_box_with_check:
-  - Architecture :ballot_box_with_check:
-  - Control Flow :negative_squared_cross_mark:
-- API Reference :ballot_box_with_check:
-  - Interfaces
-    - HTTP :negative_squared_cross_mark:
-    - mDNS :ballot_box_with_check:
-    - UDP :negative_squared_cross_mark:
-    - USB :ballot_box_with_check:
-  - Middlewares
-    - DCC :negative_squared_cross_mark:
-    - OTA :negative_squared_cross_mark:
-    - Z21 :negative_squared_cross_mark:
-    - ZIMO :negative_squared_cross_mark:
-  - Drivers
-    - Analog :ballot_box_with_check:
-    - LED :ballot_box_with_check:
-    - Out :negative_squared_cross_mark:
-    - Trace :negative_squared_cross_mark:
-    - WiFi :negative_squared_cross_mark:
-  - Memory
-    - NVS :ballot_box_with_check:
-- HW Reference :negative_squared_cross_mark:
+## Features
+- Uniform look for landing page and project documentation
+- Modern look despite Doxygen due to [Doxygen Awesome](https://github.com/jothepro/doxygen-awesome-css)
+- No ads, no tracking or other B$
 
-### Frontend
-- Introduction :ballot_box_with_check:
-- Getting Started :ballot_box_with_check:
-  - Development :ballot_box_with_check:
-  - Configuration :ballot_box_with_check:
-  - Architecture :ballot_box_with_check:
-- API Reference :ballot_box_with_check:
-  - Constants :ballot_box_with_check:
-  - Models :negative_squared_cross_mark:
-  - Providers :negative_squared_cross_mark:
-  - Screens :negative_squared_cross_mark:
-  - Services :negative_squared_cross_mark:
-  - Utilities :negative_squared_cross_mark:
-  - Widgets :negative_squared_cross_mark:
+## Getting Started
+### Prerequisites
+- [CMake](https://cmake.org) ( >= 3.25 )
+- [graphviz](https://graphviz.org) ( >= 14.0.0 )
+- [openjdk](https://openjdk.org) ( >= 21 )
 
-### Flasher
-- Introduction :ballot_box_with_check:
-- Getting Started :ballot_box_with_check:
-- API Reference :ballot_box_with_check:
+### Build
+The website gets published automatically with each push to the master branch through the [docs workflow](.github/workflows/docs.yml). However, it is also possible to build the site locally if the prerequisites are installed.
+```sh
+cmake --preset "Release"
+cmake --build build --parallel --target OpenRemiseDocs
+```
+
+If the build was successful, the website can be viewed simply with a browser by opening `build/docs/html/index.html` or by creating a small web server.
+```sh
+python -m http.server --directory build/docs/html --bind 127.0.0.1
+```

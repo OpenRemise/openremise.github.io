@@ -31,7 +31,7 @@ jobs:
         run: |
           sudo apt update -y
           sudo apt install -y graphviz openjdk-21-jdk
-      - run: cmake -Bbuild
+      - run: cmake --preset "Release"
       - run: cmake --build build --parallel --target OpenRemiseDocs
       - name: Setup Pages
         uses: actions/configure-pages@v5
