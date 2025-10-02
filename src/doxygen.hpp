@@ -452,11 +452,11 @@
 /// If you are interested, please contact me in the forums mentioned \ref
 /// section_faq_support "above" or at my email address.
 ///
-/// \section section_faq_connectors Where can I buy the connectors?
-/// The 3.5 and 5.08mm connectors are available from several manufacturers.
-/// Since the OpenRemise boards have [Phoenix
+/// \section section_faq_plugs Where can I buy the plugs?
+/// The 3.5 and 5.08mm plugs are available from several manufacturers. Since the
+/// OpenRemise boards have [Phoenix
 /// Contact](https://www.phoenixcontact.com/en-pc/) sockets installed, I would
-/// suggest purchasing the connectors from this company as well.
+/// suggest purchasing the counterparts from this company as well.
 ///
 // clang-format off
 /// \page page_faq FAQ
@@ -465,6 +465,13 @@
 /// | ----------- | --------------- | -------------- | ------------------------------------------------------------------------------------ |
 /// | Track       | Phoenix Contact | 1840366        | [DigiKey](https://www.digikey.at/en/products/detail/phoenix-contact/1840366/349178)  |
 /// | Power       | Phoenix Contact | 1836079        | [DigiKey](https://www.digikey.at/en/products/detail/phoenix-contact/1836079/2527923) |
+///
+/// Alternatively, the plugs are also available directly from ZIMO at various
+/// model railway shops, e.g.
+/// | Connector   | Manufacturer    | Product Number | Distributor                                                                                                                                                                                                                                                                                               |
+/// | ----------- | --------------- | -------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+/// | Track       | Phoenix Contact | 2POLSTECK-K    | [fischer-modell](https://fischer-modell.de/Hersteller/ZIMO/Zubehoer/Stecker-Kabel-und-Buchsen/ZIMO-2POLSTECK-K) or\n[Tina's Modelleisenbahn](https://www.tinas-modelleisenbahn.at/digitale-komponenten/zimo-2polsteck-g-2pol-stecker-fuer-trafoanschluss-mx1-mxulf-.html?xoid=6rpdq78bqstn43mrs3i2lc9bn8) |
+/// | Power       | Phoenix Contact | 2POLSTECK-G    | [fischer-modell](https://fischer-modell.de/Hersteller/ZIMO/Zubehoer/Stecker-Kabel-und-Buchsen/ZIMO-2POLSTECK-G) or\n[Tina's Modelleisenbahn](https://www.tinas-modelleisenbahn.at/digitale-komponenten/zimo-2polsteck-k-2pol-stecker-fuer-schienenanschluss-mx1-mx-.html?xoid=80bp37lg1vo45qcujaofhgchei) |
 // clang-format on
 /// \page page_faq FAQ
 /// \details \tableofcontents
