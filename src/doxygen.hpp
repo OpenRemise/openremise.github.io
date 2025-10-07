@@ -622,6 +622,8 @@
 /// \details
 /// \htmlonly
 /// <iframe width="480" height="270" src="https://www.youtube.com/embed/wfi0bsJeZnY" title="Getting Started with an S3Main" allow="picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+/// <br><br>
+/// <iframe width="480" height="270" src="https://www.youtube.com/embed/ne2UJQB1fUw" title="Updating an S3Main" allow="picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 /// \endhtmlonly
 // clang-format on
 /// \page page_videos Videos
@@ -633,6 +635,8 @@
 /// \details
 /// \htmlonly
 /// <iframe width="480" height="270" src="https://www.youtube.com/embed/VNWBDyTOREM" title="Erste Schritte mit einem S3Main" allow="picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+/// <br><br>
+/// <iframe width="480" height="270" src="https://www.youtube.com/embed/wuVNNiUtJMg" title="Updaten eines S3Main" allow="picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 /// \endhtmlonly
 // clang-format on
 /// \page page_videos Videos
