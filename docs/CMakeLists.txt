@@ -27,7 +27,7 @@ if(TARGET Doxygen::dot)
   set(PLANTUML_JAR_PATH ${PlantUML_SOURCE_DIR}/plantuml-1.2025.1.jar)
 
   # Get doxygen-awesome-css
-  cpmaddpackage("gh:jothepro/doxygen-awesome-css@2.4.0")
+  cpmaddpackage("gh:jothepro/doxygen-awesome-css@2.4.1")
 
   # Get customizations
   file(DOWNLOAD
