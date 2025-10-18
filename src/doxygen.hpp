@@ -75,13 +75,13 @@
 ///   <br><br>
 ///   \image{inline} html system_update_alt.svg width=16px
 ///   **Decoder updates**<br>
-///   All [ZIMO](https://www.zimo.at/web2010/index.html) MN-, MS- and MX mobile
-///   decoders can be updated.
+///   All [ZIMO](https://www.zimo.at/web2010/index.html) MS/N, FS/N and MX
+///   mobile decoders can be updated.
 ///   <br><br>
 ///   \emoji :musical_note:
 ///   **Sound**<br>
-///   All [ZIMO](https://www.zimo.at/web2010/index.html) MN-, MS- and MX mobile
-///   decoders can be loaded with sound (or general projects).
+///   All [ZIMO](https://www.zimo.at/web2010/index.html) MS/N, FS/N and MX
+///   mobile decoders can be loaded with sound (or general projects).
 ///   <br><br>
 ///   \image{inline} html 3rd_party.svg width=16px
 ///   **3rd party
@@ -542,7 +542,7 @@
 ///
 /// \section section_faq_decup Why doesn't the ZIMO decoder update work?
 /// This can have different reasons depending on the decoder type:
-/// - For MN- and MS decoders, any energy storage in the decoder must be
+/// - For MS/N and FS/N decoders, any energy storage in the decoder must be
 ///   completely empty. If this is not the case, the decoder will not recognize
 ///   the entry into the bootloader. This mainly affects large-scale decoders or
 ///   decoders with [goldcaps or
