@@ -76,12 +76,12 @@
 ///   \image{inline} html system_update_alt.svg width=16px
 ///   **Decoder updates**<br>
 ///   All [ZIMO](https://www.zimo.at/web2010/index.html) MS/N, FS/N and MX
-///   mobile decoders can be updated.
+///   decoders can be updated.
 ///   <br><br>
 ///   \emoji :musical_note:
 ///   **Sound**<br>
 ///   All [ZIMO](https://www.zimo.at/web2010/index.html) MS/N, FS/N and MX
-///   mobile decoders can be loaded with sound (or general projects).
+///   decoders can be loaded with sound (or general projects).
 ///   <br><br>
 ///   \image{inline} html 3rd_party.svg width=16px
 ///   **3rd party
@@ -98,10 +98,6 @@
 ///   beginner-friendly.
 ///   <li>[ZCS](https://www.beathis.ch/zcs/index.html)</li><br>
 ///   A CV programming tool specifically for ZIMO decoders.
-///   <li>[ZIMO
-///   ZSP](https://www.zimo.at/web2010/products/zsp_zimo-sound-programmer_EN.htm)</li><br>
-///   The ZIMO Sound Programmer, used to create, preview and modify sound
-///   projects. It also supports updating decoders or loading sound via USB.
 ///   <li>[Z2X-Programmer](https://github.com/PeterK78/Z2X-Programmer)</li><br>
 ///   A relatively new programming tool that is still in its early stages, but
 ///   already works very well.
@@ -114,8 +110,6 @@
 ///   Free and cross-platform.
 ///   <li>[iTrain](https://www.berros.eu)</li><br>
 ///   Cross-platform software, reasonable priced.
-///   <li>[TrainController](https://www.freiwald.com/pages/traincontroller.htm)</li><br>
-///   Windows only, very expensive.
 ///   </ul>
 ///
 ///   <br>
