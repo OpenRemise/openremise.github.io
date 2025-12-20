@@ -89,13 +89,11 @@ if(TARGET Doxygen::dot)
   add_custom_command(
     TARGET ${PROJECT_NAME}Docs
     POST_BUILD
+    COMMAND ${CMAKE_COMMAND} -E copy_directory ${CMAKE_CURRENT_LIST_DIR}/cases
+            ${CMAKE_CURRENT_BINARY_DIR}/html/cases
     COMMAND
       ${CMAKE_COMMAND} -E copy ${CMAKE_CURRENT_LIST_DIR}/captive_portal.webm
       ${CMAKE_CURRENT_BINARY_DIR}/html/captive_portal.webm
-    COMMAND ${CMAKE_COMMAND} -E copy ${CMAKE_CURRENT_LIST_DIR}/case_12mm.dxf
-            ${CMAKE_CURRENT_BINARY_DIR}/html/case_12mm.dxf
-    COMMAND ${CMAKE_COMMAND} -E copy ${CMAKE_CURRENT_LIST_DIR}/case_et-440.zip
-            ${CMAKE_CURRENT_BINARY_DIR}/html/case_et-440.zip
     COMMAND
       ${CMAKE_COMMAND} -E copy
       ${CMAKE_CURRENT_LIST_DIR}/install_the_firmware.webm

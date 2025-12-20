@@ -571,15 +571,21 @@
 /// - [Acryl case by the user 12mm @ opendcc.de](https://forum.opendcc.de/viewtopic.php?p=115582#p115582)<br>
 /// Not everyone will have the opportunity for laser cutting, but if that isn't
 /// beautiful then I don't know what is.
-/// \image html case_12mm.jpg "Lasercut acryl case" width=480px
-/// Download [DXF file](case_12mm.dxf)<br><br>
+/// \image html cases/12mm.jpg "Lasercut acryl case" width=480px
+/// Download [DXF file](cases/12mm.dxf)<br><br>
 ///
 /// - [3D printed case by the user ET-440 @ stummiforum.de](https://www.stummiforum.de/t233609f7-OpenRemise-Neue-Open-Source-Zentrale-Programmer-1.html#msg2818168)<br>
 /// A fully enclosed case that protects the circuit board very well. It is
 /// secured with four 16mm M3 screws. Unfortunately, it obscures the LEDs. If
 /// you don't own a printer yourself, you can order it from [3d-druck-amann.de](https://3d-druck-amann.de).
-/// \image html case_et-440.jpeg "3D printed housing" width=480px
-/// Download [STEP file](case_et-440.zip)<br><br>
+/// \image html cases/et-440.jpeg "3D printed housing" width=480px
+/// Download [STEP file](cases/et-440.zip)<br><br>
+///
+/// - [3D printed case by the user ERI_BE @ stummiforum.de](https://www.stummiforum.de/t233609f7-OpenRemise-Neue-Open-Source-Zentrale-Programmer-4.html#msg2885252)<br>
+/// Another fully enclosed 3D printed case that even comes with the option to
+/// install light guides. The cover is secured with 6mm M3 screws.
+/// \image html cases/eri_be.png "3D printed housing" width=480px
+/// Download [STL/FreeCad files](cases/eri_be.zip)<br><br>
 ///
 /// - [Support (Case) for OpenRemise - Remix by the user vhb @ 1zu160.de](https://www.1zu160.net/scripte/nliste/detail.php?id=17819&fid=1455763)<br>
 /// Sometimes all you need is a stand, especially useful for developers.
