@@ -269,7 +269,7 @@
 /// \details \tableofcontents
 /// <div class="tabbed">
 /// - <b class="tab-title">Windows</b>
-///   - Download and extract [Flasher-0.1.1-Windows-x64.zip](https://github.com/OpenRemise/Flasher/releases/download/v0.1.1/Flasher-0.1.1-Windows-x64.zip)
+///   - Download and extract [Flasher-0.1.2-Windows-x64.zip](https://github.com/OpenRemise/Flasher/releases/download/v0.1.2/Flasher-0.1.2-Windows-x64.zip)
 ///   - Run `Flasher.bat`
 ///   - Click the `Download latest firmware` \image{inline} html network_drive.svg width=24px button
 ///   - Wait until the display shows `Done`
@@ -277,7 +277,7 @@
 ///   - Wait until the display shows `Done` again
 ///   - Press the EN button on the board to reboot
 /// - <b class="tab-title">Linux</b>
-///   - Download and extract [Flasher-0.1.1-Linux-x64.zip](https://github.com/OpenRemise/Flasher/releases/download/v0.1.1/Flasher-0.1.1-Linux-x64.zip)
+///   - Download and extract [Flasher-0.1.2-Linux-x64.zip](https://github.com/OpenRemise/Flasher/releases/download/v0.1.2/Flasher-0.1.2-Linux-x64.zip)
 ///   - Make `Flasher.sh` executable by running `chmod +x Flasher.sh`
 ///   - Run `Flasher.sh`
 ///   - Click the `Download latest firmware` \image{inline} html network_drive.svg width=24px button
