@@ -269,7 +269,7 @@
 /// \details \tableofcontents
 /// <div class="tabbed">
 /// - <b class="tab-title">Windows</b>
-///   - Download and extract [Flasher-0.1.2-Windows-x64.zip](https://github.com/OpenRemise/Flasher/releases/download/v0.1.2/Flasher-0.1.2-Windows-x64.zip)
+///   - Download and extract [Flasher-0.1.1-Windows-x64.zip](https://github.com/OpenRemise/Flasher/releases/download/v0.1.1/Flasher-0.1.1-Windows-x64.zip)
 ///   - Run `Flasher.bat`
 ///   - Click the `Download latest firmware` \image{inline} html network_drive.svg width=24px button
 ///   - Wait until the display shows `Done`
@@ -277,7 +277,7 @@
 ///   - Wait until the display shows `Done` again
 ///   - Press the EN button on the board to reboot
 /// - <b class="tab-title">Linux</b>
-///   - Download and extract [Flasher-0.1.2-Linux-x64.zip](https://github.com/OpenRemise/Flasher/releases/download/v0.1.2/Flasher-0.1.2-Linux-x64.zip)
+///   - Download and extract [Flasher-0.1.1-Linux-x64.zip](https://github.com/OpenRemise/Flasher/releases/download/v0.1.1/Flasher-0.1.1-Linux-x64.zip)
 ///   - Make `Flasher.sh` executable by running `chmod +x Flasher.sh`
 ///   - Run `Flasher.sh`
 ///   - Click the `Download latest firmware` \image{inline} html network_drive.svg width=24px button
@@ -493,25 +493,6 @@
 /// \page page_faq FAQ
 /// \details \tableofcontents
 /// \image html how_to_connect_using_the_z21_app.png "Frontend homepage / Z21 app settings screen" width=480px
-// clang-format on
-/// \page page_faq FAQ
-/// \details \tableofcontents
-///
-/// \section section_faq_usb How to install the "ZIMO Interface" USB driver?
-/// If you want to use an OpenRemise board with
-/// [ZSP](https://www.zimo.at/web2010/products/zsp_zimo-sound-programmer.htm)
-/// you have to install the official ZIMO Interface USB driver. Please download
-/// the [ZIMO_Interface.inf](./ZIMO_Interface.inf) file and follow the video
-/// description.
-// clang-format off
-/// \page page_faq FAQ
-/// \details \tableofcontents
-/// \htmlonly
-/// <div class="image">
-/// <iframe width="606" height="462" src="install_usb_driver.webm" title="Installing the \"ZIMO Interface\" USB driver" allow="picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-/// <div class="caption">Installing the "ZIMO Interface" USB driver</div>
-/// </div>
-/// \endhtmlonly
 // clang-format on
 /// \page page_faq FAQ
 /// \details \tableofcontents
