@@ -98,12 +98,6 @@ if(TARGET Doxygen::dot)
       ${CMAKE_COMMAND} -E copy
       ${CMAKE_CURRENT_LIST_DIR}/install_the_firmware.webm
       ${CMAKE_CURRENT_BINARY_DIR}/html/install_the_firmware.webm
-    COMMAND
-      ${CMAKE_COMMAND} -E copy ${CMAKE_CURRENT_LIST_DIR}/install_usb_driver.webm
-      ${CMAKE_CURRENT_BINARY_DIR}/html/install_usb_driver.webm
     COMMAND ${CMAKE_COMMAND} -E copy ${CMAKE_CURRENT_LIST_DIR}/meta_image.png
-            ${CMAKE_CURRENT_BINARY_DIR}/html/meta_image.png
-    COMMAND
-      ${CMAKE_COMMAND} -E copy ${CMAKE_CURRENT_LIST_DIR}/ZIMO_Interface.inf
-      ${CMAKE_CURRENT_BINARY_DIR}/html/ZIMO_Interface.inf)
+            ${CMAKE_CURRENT_BINARY_DIR}/html/meta_image.png)
 endif()
