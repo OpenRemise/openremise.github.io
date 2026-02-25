@@ -40,7 +40,7 @@
 /// Herzlich Willkommen beim [OpenRemise](https://openremise.at) Projekt, einer
 /// **Open-Source** [DCC](https://de.wikipedia.org/wiki/Digital_Command_Control)
 /// Lösung für den Betrieb einer Modellbahn. OpenRemise kombiniert den
-/// Bedienkomfort kommezieller Systeme mit dem Charme eines DIY Projekts. Für
+/// Bedienkomfort kommerzieller Systeme mit dem Charme eines DIY Projekts. Für
 /// die Einrichtung sind **keinerlei Elektronik- oder Lötkenntnisse**
 /// erforderlich, das System ist nahezu Plug-and-Play. Nach der
 /// Ersteinrichtung erfolgt die gesamte weitere Bedienung bequem über eine
@@ -831,7 +831,7 @@
 /// chapter \ref section_getting_started_wifi. Instead of `remise.local`, you
 /// would then type e.g. `192.168.0.4` into the browser's address bar.
 /// \~german
-/// Falls die Verbindung via mDNS Probleme macht empfielt es sich, wie im
+/// Falls die Verbindung via mDNS Probleme macht empfiehlt es sich, wie im
 /// Kapitel \ref section_getting_started_wifi beschrieben, eine [statische
 /// IP](https://de.wikipedia.org/wiki/IP-Adresse) Adresse einzurichten. Anstelle
 /// von `remise.local` erreicht man das Frontend dann indem man z.B.
@@ -1024,10 +1024,10 @@
 /// \section section_faq_capport Wie kann das Captive Portal wieder öffnen?
 /// Falls sich die Platine aus irgendeinem Grund nicht mehr mit dem WLAN
 /// Netzwerk verbindet, z.B. weil sich das Password geändert hat oder man sich
-/// im Captive Portal vertippt hat, so lässt sich durch drücken des BOOT Tasters
-/// für **5 Sekunden** der Access Point wiederherstellen. Die blaue LED leuchtet
-/// auf und ein ein Access Point namens **OpenRemise** wird erstellt. Hier
-/// lassen sich die WLAN Einstellungen wie bereits in der \ref
+/// im Captive Portal vertippt hat, so lässt sich durch Drücken des BOOT Tasters
+/// für **5 Sekunden** der Access Point Modus wiederherstellen. Die blaue LED
+/// leuchtet auf und ein ein Access Point namens **OpenRemise** wird erstellt.
+/// Hier lassen sich die WLAN Einstellungen wie bereits in der \ref
 /// section_getting_started_wifi "Erste Schritte" Anleitung beschrieben ändern.
 /// \~
 ///
@@ -1089,7 +1089,7 @@
 /// \~german
 /// \section s_f_m Wie kann die mDNS Auflösung unter Linux beschleunigt werden?
 /// Falls es unter [Linux](https://wiki.archlinux.org/title/Avahi) zu
-/// Verzögerungen beim Auflösen von `*remise.local` kommt kann dies am `hosts`
+/// Verzögerungen beim Auflösen von `*remise.local` kommt, kann dies am `hosts`
 /// entry in `/etc/nsswitch.conf` liegen. Ich empfehle hier die expliziten IPv4
 /// Versionen einzustellen, sprich `mdns4_minimal` und `mdns4` statt
 /// `mdns_minimal` und `mdns`.
@@ -1156,7 +1156,7 @@
 /// - [3D Druck Gehäuse des Nutzers ET-440 @ stummiforum.de](https://www.stummiforum.de/t233609f7-OpenRemise-Neue-Open-Source-Zentrale-Programmer-1.html#msg2818168)<br>
 /// Ein vollständig geschlossenes Gehäuse, das die Platine optimal schützt. Es
 /// wird mit vier 16mm M3 Schrauben befestigt. Leider verdeckt es die LEDs.
-/// Für den Fall dass man keinen eigenen 3D Drucker besitzt kann man es bei
+/// Für den Fall, dass man keinen eigenen 3D Drucker besitzt kann man es bei
 /// [3d-druck-amann.de](https://3d-druck-amann.de) bestellen.
 /// \image html ../cases/et-440.jpeg "3D Druck Gehäuse" width=480px
 /// [STEP file](../cases/et-440.zip) herunterladen<br><br>
@@ -1189,11 +1189,12 @@
 /// \~german
 /// \section section_service_mode Service Mode funktioniert nicht?
 /// Leider halten sich viele Hersteller nicht an die DCC Standards und
-/// implementieren den Service Mode nicht spezifikationsgemäß. Sollte das CV
-/// Lesen bei einem Decoder nicht funktionieren, so kann es helfen die Anzahl
-/// der Programmierpakete in den Einstellungen zu erhöhen und gegebenenfalls den
-/// ACK Strom zu reduzieren. Auch eine Erhöhung der Anzahl an Startup-Reset
-/// Paketen kann helfen, sofern der Decoder zu lange zum Hochfahren benötigt.
+/// implementieren den Service Mode nicht spezifikationsgemäß. Sollte das Lesen
+/// einer CV bei einem Decoder nicht funktionieren, so kann es helfen, die
+/// Anzahl der Programmierpakete in den Einstellungen zu erhöhen und
+/// gegebenenfalls den ACK Strom zu reduzieren. Auch eine Erhöhung der Anzahl an
+/// Startup-Reset Paketen kann helfen, sofern der Decoder zu lange zum
+/// Hochfahren benötigt.
 /// \~
 ///
 /// \~english
