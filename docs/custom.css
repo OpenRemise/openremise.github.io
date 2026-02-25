@@ -2,14 +2,14 @@
   font-family: 'Glacial Indifference';
   font-style: normal;
   font-weight: 400;
-  src: url('GlacialIndifference-Regular.otf') format('opentype')
+  src: url('../GlacialIndifference-Regular.otf') format('opentype')
 }
 
 @font-face {
   font-family: 'Glacial Indifference';
   font-style: normal;
   font-weight: 700;
-  src: url('GlacialIndifference-Bold.otf') format('opentype')
+  src: url('../GlacialIndifference-Bold.otf') format('opentype')
 }
 
 html {

@@ -11,42 +11,43 @@ cpmaddpackage(
 set(DOXYGEN_EXECUTABLE ${Doxygen_SOURCE_DIR}/bin/doxygen)
 find_package(Doxygen REQUIRED COMPONENTS dot)
 
-if(TARGET Doxygen::dot)
-  # Get PlantUML
-  cpmaddpackage(
-    NAME
-    PlantUML
-    URL
-    "https://github.com/plantuml/plantuml/releases/download/v1.2025.1/plantuml-1.2025.1.jar"
-    VERSION
-    1.2025.1
-    DOWNLOAD_ONLY
-    ON
-    DOWNLOAD_NO_EXTRACT
-    ON)
-  set(PLANTUML_JAR_PATH ${PlantUML_SOURCE_DIR}/plantuml-1.2025.1.jar)
+# Get PlantUML
+cpmaddpackage(
+  NAME
+  PlantUML
+  URL
+  "https://github.com/plantuml/plantuml/releases/download/v1.2025.1/plantuml-1.2025.1.jar"
+  VERSION
+  1.2025.1
+  DOWNLOAD_ONLY
+  ON
+  DOWNLOAD_NO_EXTRACT
+  ON)
+set(PLANTUML_JAR_PATH ${PlantUML_SOURCE_DIR}/plantuml-1.2025.1.jar)
 
-  # Get doxygen-awesome-css
-  cpmaddpackage("gh:jothepro/doxygen-awesome-css@2.4.1")
+# Get doxygen-awesome-css
+cpmaddpackage("gh:jothepro/doxygen-awesome-css@2.4.1")
 
-  # Get customizations
-  file(DOWNLOAD
-       "https://github.com/OpenRemise/.github/raw/master/data/icons/favicon.ico"
-       ${CMAKE_CURRENT_BINARY_DIR}/html/favicon.ico)
-  file(DOWNLOAD
-       "https://github.com/OpenRemise/.github/raw/master/data/images/logo.svg"
-       ${CMAKE_CURRENT_BINARY_DIR}/html/logo.svg)
-  file(
-    DOWNLOAD
-    "https://github.com/OpenRemise/.github/raw/master/data/fonts/GlacialIndifference-Bold.otf"
-    ${CMAKE_CURRENT_BINARY_DIR}/html/GlacialIndifference-Bold.otf)
-  file(
-    DOWNLOAD
-    "https://github.com/OpenRemise/.github/raw/master/data/fonts/GlacialIndifference-Regular.otf"
-    ${CMAKE_CURRENT_BINARY_DIR}/html/GlacialIndifference-Regular.otf)
+# Get customizations
+file(DOWNLOAD
+     "https://github.com/OpenRemise/.github/raw/master/data/icons/favicon.ico"
+     ${CMAKE_CURRENT_BINARY_DIR}/html/favicon.ico)
+file(DOWNLOAD
+     "https://github.com/OpenRemise/.github/raw/master/data/images/logo.svg"
+     ${CMAKE_CURRENT_BINARY_DIR}/html/logo.svg)
+file(
+  DOWNLOAD
+  "https://github.com/OpenRemise/.github/raw/master/data/fonts/GlacialIndifference-Bold.otf"
+  ${CMAKE_CURRENT_BINARY_DIR}/html/GlacialIndifference-Bold.otf)
+file(
+  DOWNLOAD
+  "https://github.com/OpenRemise/.github/raw/master/data/fonts/GlacialIndifference-Regular.otf"
+  ${CMAKE_CURRENT_BINARY_DIR}/html/GlacialIndifference-Regular.otf)
 
+function(doxygen_add_docs_lang OUTPUT_LANGUAGE)
   set(DOXYGEN_PROJECT_LOGO ${CMAKE_CURRENT_BINARY_DIR}/html/logo.svg)
   set(DOXYGEN_PROJECT_ICON ${CMAKE_CURRENT_BINARY_DIR}/html/favicon.ico)
+  set(DOXYGEN_OUTPUT_LANGUAGE ${OUTPUT_LANGUAGE})
   set(DOXYGEN_REPEAT_BRIEF NO)
   set(DOXYGEN_MULTILINE_CPP_IS_BRIEF YES)
   set(DOXYGEN_BUILTIN_STL_SUPPORT YES)
@@ -58,19 +59,39 @@ if(TARGET Doxygen::dot)
   set(DOXYGEN_EXTRACT_LOCAL_METHODS YES)
   set(DOXYGEN_EXTRACT_ANON_NSPACES YES)
   set(DOXYGEN_SHOW_FILES NO)
-  set(DOXYGEN_LAYOUT_FILE ${CMAKE_CURRENT_LIST_DIR}/DoxygenLayout.xml)
+  if(DOXYGEN_OUTPUT_LANGUAGE STREQUAL English)
+    set(DOXYGEN_USERGROUP_TITLE Development)
+    configure_file(${CMAKE_CURRENT_LIST_DIR}/DoxygenLayout.xml.in
+                   ${CMAKE_CURRENT_BINARY_DIR}/DoxygenLayoutEnglish.xml @ONLY)
+    set(DOXYGEN_LAYOUT_FILE
+        ${CMAKE_CURRENT_BINARY_DIR}/DoxygenLayoutEnglish.xml)
+  elseif(DOXYGEN_OUTPUT_LANGUAGE STREQUAL German)
+    set(DOXYGEN_USERGROUP_TITLE Entwicklung)
+    configure_file(${CMAKE_CURRENT_LIST_DIR}/DoxygenLayout.xml.in
+                   ${CMAKE_CURRENT_BINARY_DIR}/DoxygenLayoutGerman.xml @ONLY)
+    set(DOXYGEN_LAYOUT_FILE ${CMAKE_CURRENT_BINARY_DIR}/DoxygenLayoutGerman.xml)
+  else()
+    message(FATAL_ERROR "Unsupported language")
+  endif()
   set(DOXYGEN_IMAGE_PATH ${CMAKE_CURRENT_LIST_DIR})
+  if(DOXYGEN_OUTPUT_LANGUAGE STREQUAL English)
+    set(DOXYGEN_HTML_OUTPUT html/en)
+  elseif(DOXYGEN_OUTPUT_LANGUAGE STREQUAL German)
+    set(DOXYGEN_HTML_OUTPUT html/de)
+  endif()
   set(DOXYGEN_HTML_HEADER ${CMAKE_CURRENT_LIST_DIR}/header.html)
   set(DOXYGEN_HTML_FOOTER ${CMAKE_CURRENT_LIST_DIR}/footer.html)
   set(DOXYGEN_HTML_EXTRA_STYLESHEET
       ${doxygen-awesome-css_SOURCE_DIR}/doxygen-awesome.css
       ${doxygen-awesome-css_SOURCE_DIR}/doxygen-awesome-sidebar-only.css
+      ${doxygen-awesome-css_SOURCE_DIR}/doxygen-awesome-sidebar-only-darkmode-toggle.css
       ${CMAKE_CURRENT_LIST_DIR}/custom.css)
   set(DOXYGEN_HTML_EXTRA_FILES
       ${doxygen-awesome-css_SOURCE_DIR}/doxygen-awesome-fragment-copy-button.js
       ${doxygen-awesome-css_SOURCE_DIR}/doxygen-awesome-interactive-toc.js
       ${doxygen-awesome-css_SOURCE_DIR}/doxygen-awesome-paragraph-link.js
-      ${doxygen-awesome-css_SOURCE_DIR}/doxygen-awesome-tabs.js)
+      ${doxygen-awesome-css_SOURCE_DIR}/doxygen-awesome-tabs.js
+      ${CMAKE_CURRENT_LIST_DIR}/doxygen-awesome-language-toggle.js)
   set(DOXYGEN_HTML_COLORSTYLE LIGHT)
   set(DOXYGEN_HTML_COLORSTYLE_HUE 209)
   set(DOXYGEN_HTML_COLORSTYLE_SAT 255)
@@ -84,20 +105,24 @@ if(TARGET Doxygen::dot)
   set(DOXYGEN_DOT_IMAGE_FORMAT svg)
   set(DOXYGEN_PLANTUML_JAR_PATH ${PLANTUML_JAR_PATH})
 
-  doxygen_add_docs(${PROJECT_NAME}Docs ALL ${CMAKE_SOURCE_DIR}/src)
+  doxygen_add_docs(${PROJECT_NAME}${OUTPUT_LANGUAGE}Docs
+                   ${CMAKE_SOURCE_DIR}/src)
+endfunction()
 
-  add_custom_command(
-    TARGET ${PROJECT_NAME}Docs
-    POST_BUILD
-    COMMAND ${CMAKE_COMMAND} -E copy_directory ${CMAKE_CURRENT_LIST_DIR}/cases
-            ${CMAKE_CURRENT_BINARY_DIR}/html/cases
-    COMMAND
-      ${CMAKE_COMMAND} -E copy ${CMAKE_CURRENT_LIST_DIR}/captive_portal.webm
-      ${CMAKE_CURRENT_BINARY_DIR}/html/captive_portal.webm
-    COMMAND
-      ${CMAKE_COMMAND} -E copy
-      ${CMAKE_CURRENT_LIST_DIR}/install_the_firmware.webm
-      ${CMAKE_CURRENT_BINARY_DIR}/html/install_the_firmware.webm
-    COMMAND ${CMAKE_COMMAND} -E copy ${CMAKE_CURRENT_LIST_DIR}/meta_image.png
-            ${CMAKE_CURRENT_BINARY_DIR}/html/meta_image.png)
-endif()
+doxygen_add_docs_lang(English)
+doxygen_add_docs_lang(German)
+
+add_custom_target(
+  ${PROJECT_NAME}Docs
+  COMMAND ${CMAKE_COMMAND} -E copy_directory ${CMAKE_CURRENT_LIST_DIR}/cases
+          ${CMAKE_CURRENT_BINARY_DIR}/html/cases
+  COMMAND ${CMAKE_COMMAND} -E copy ${CMAKE_CURRENT_LIST_DIR}/captive_portal.webm
+          ${CMAKE_CURRENT_BINARY_DIR}/html/captive_portal.webm
+  COMMAND ${CMAKE_COMMAND} -E copy ${CMAKE_CURRENT_LIST_DIR}/index.html
+          ${CMAKE_CURRENT_BINARY_DIR}/html/index.html
+  COMMAND
+    ${CMAKE_COMMAND} -E copy ${CMAKE_CURRENT_LIST_DIR}/install_the_firmware.webm
+    ${CMAKE_CURRENT_BINARY_DIR}/html/install_the_firmware.webm
+  COMMAND ${CMAKE_COMMAND} -E copy ${CMAKE_CURRENT_LIST_DIR}/meta_image.png
+          ${CMAKE_CURRENT_BINARY_DIR}/html/meta_image.png
+  DEPENDS ${PROJECT_NAME}EnglishDocs ${PROJECT_NAME}GermanDocs)

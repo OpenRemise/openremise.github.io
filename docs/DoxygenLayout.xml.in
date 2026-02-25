@@ -5,7 +5,7 @@
   <navindex>
     <tab type="mainpage" visible="yes" title=""/>
     <tab type="pages" visible="yes" title="" intro=""/>
-    <tab type="usergroup" title="Development" url="[none]">
+    <tab type="usergroup" title="@DOXYGEN_USERGROUP_TITLE@" url="[none]">
       <tab type="user" url="https://openremise.at/Firmware" title="Firmware 🔗"/>
       <tab type="user" url="https://openremise.at/Frontend" title="Frontend 🔗"/>
       <tab type="user" url="https://openremise.at/Flasher" title="Flasher 🔗"/>
