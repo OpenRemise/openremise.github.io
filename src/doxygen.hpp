@@ -489,7 +489,7 @@
 /// \~english
 /// \subsection subsection_getting_started_bl Put the Board into Bootloader
 /// In order to make the board receptive to uploads, we need to switch to the
-/// so-called **bootloader**. Conveniently, I printed the instructions directly
+/// so-called **bootloader**. Conveniently, we printed the instructions directly
 /// onto the board \emoji :wink:. The two buttons **EN** and **BOOT** must be
 /// pressed in the following order:
 /// - Hold EN
@@ -826,7 +826,7 @@
 ///
 /// \subsection subsection_getting_started_via_ip  ...via IP
 /// \~english
-/// If you have problems connecting via mDNS, I recommend setting up a static
+/// If you have problems connecting via mDNS, we recommend setting up a static
 /// [IP address](https://en.wikipedia.org/wiki/IP_address) as described in
 /// chapter \ref section_getting_started_wifi. Instead of `remise.local`, you
 /// would then type e.g. `192.168.0.4` into the browser's address bar.
@@ -917,7 +917,7 @@
 /// \section section_faq_plugs Where can I buy the plugs?
 /// The 3.5 and 5.08mm plugs are available from several manufacturers. Since the
 /// OpenRemise boards have [Phoenix
-/// Contact](https://www.phoenixcontact.com/en-pc) sockets installed, I would
+/// Contact](https://www.phoenixcontact.com/en-pc) sockets installed, we would
 /// suggest purchasing the counterparts from this company as well.
 /// \~german
 /// \section section_faq_plugs Wo kann ich die Stecker kaufen?
@@ -1033,7 +1033,8 @@
 ///
 /// \~english
 /// \section section_faq_ilim Which current limit is right for me?
-/// As a rule of thumb, I recommend the following settings for normal operation:
+/// As a rule of thumb, we recommend the following settings for normal
+/// operation:
 /// | Current [A] | Nominal size                                       |
 /// | ----------- | -------------------------------------------------- |
 /// | 0.5         | Service mode                                       |
@@ -1182,10 +1183,10 @@
 /// \section section_service_mode Service mode is not working?
 /// Unfortunately, many manufacturers do not adhere to DCC standards and do not
 /// even manage to implement the service mode according to specifications. If
-/// you experience CV verify problems with a decoder, I would suggest increasing
-/// the number of programming packets in the settings and, if necessary,
-/// reducing the ACK current. Increasing the number of startup reset packets can
-/// also help if a decoder takes too long to boot.
+/// you experience CV verify problems with a decoder, we suggest increasing the
+/// number of programming packets in the settings and, if necessary, reducing
+/// the ACK current. Increasing the number of startup reset packets can also
+/// help if a decoder takes too long to boot.
 /// \~german
 /// \section section_service_mode Service Mode funktioniert nicht?
 /// Leider halten sich viele Hersteller nicht an die DCC Standards und
