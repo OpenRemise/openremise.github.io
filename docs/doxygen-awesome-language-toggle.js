@@ -8,25 +8,33 @@ https://github.com/jothepro/doxygen-awesome-css
 */
 
 class DoxygenAwesomeLanguageToggle extends HTMLElement {
-    static _staticConstructor = function() {
-        // No system preference for language, but initialize if needed
-    }()
-
     static init() {
-        $(function() {
-            $(document).ready(function() {
-                // Re-use .css for dark-mode-toggle
-                const toggleButton = document.createElement('doxygen-awesome-dark-mode-toggle')
-                toggleButton.updateIcon()
+        // Re-use the theme's dark-mode-toggle styles; its script must not be loaded.
+        const toggleButton = document.createElement('doxygen-awesome-dark-mode-toggle')
+        toggleButton.updateIcon()
 
-                $(document).ready(function(){
-                    document.getElementById("MSearchBox").parentNode.appendChild(toggleButton)
-                })
-                $(window).resize(function(){
-                    document.getElementById("MSearchBox").parentNode.appendChild(toggleButton)
-                })
-            })
+        const moveToggle = () => {
+            const searchBox = document.getElementById("MSearchBox")
+            const toggle = document.querySelector('doxygen-awesome-dark-mode-toggle') || toggleButton
+            if (searchBox && searchBox.parentNode !== toggle.parentNode) {
+                searchBox.parentNode.appendChild(toggle)
+            }
+        }
+
+        const containsSearchBox = node => {
+            return node.nodeType === Node.ELEMENT_NODE &&
+                (node.id === "MSearchBox" || node.querySelector("#MSearchBox") !== null)
+        }
+
+        const observer = new MutationObserver(mutations => {
+            if (mutations.some(mutation =>
+                [...mutation.addedNodes, ...mutation.removedNodes].some(containsSearchBox)
+            )) {
+                moveToggle()
+            }
         })
+        observer.observe(document.documentElement, { childList: true, subtree: true })
+        moveToggle()
     }
 
     constructor() {
