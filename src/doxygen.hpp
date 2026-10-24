@@ -188,12 +188,6 @@
 ///   in English. As a native German speaker, this is a bit embarrassing...
 ///   <br><br>
 /// - <b class="tab-title">Not planned</b>
-///   \image{inline} html wifi.svg width=16px
-///   **Access point operation**<br>
-///   OpenRemise is designed to be integrated into an existing network. Access
-///   point operation is not planned for the time being, contributions from the
-///   community would be welcome.
-///   <br><br>
 ///   \image{inline} html square_wave.svg width=16px
 ///   **Other track protocols**<br>
 ///   I don’t plan to work on it, contributions from the community would be
@@ -336,12 +330,6 @@
 ///   in Englisch verfügbar. Etwas peinlich als deutscher Muttersprachler...
 ///   <br><br>
 /// - <b class="tab-title">Nicht geplant</b>
-///   \image{inline} html wifi.svg width=16px
-///   **Access Point Betrieb**<br>
-///   OpenRemise ist für die Integration in ein bestehendes Netzwerk konzipiert.
-///   Der Betrieb als Access Point ist vorerst nicht geplant, Beiträge aus der
-///   Community wären willkommen.
-///   <br><br>
 ///   \image{inline} html square_wave.svg width=16px
 ///   **Andere Gleisprotokolle**<br>
 ///   Ich selbst plane nicht daran zu arbeiten, Beiträge aus der Community wären
@@ -654,121 +642,56 @@
 /// \~
 ///
 /// \~english
-/// \section section_getting_started_wifi Connect to WiFi
+/// \section section_getting_started_connect Connect to OpenRemise
 /// Congratulations, you have successfully installed the OpenRemise firmware on
-/// a board. Some features, such as USB, already work, but the board is still
-/// running in what is known as **access point mode**. This means that the
-/// **board initially opens its own WiFi network** and does not connect to one.
-/// Therefore, we still need to adjust the WiFi settings to connect to the
-/// desired network.
+/// a board. By default it now boots in **access point** mode. This means that
+/// the board creates its own network called `OpenRemise`. To connect to this
+/// network, you need a WiFi enabled device. If your PC does not have WiFi, you
+/// can use a smartphone or any other device equipped with a web browser.
 /// \~german
-/// \section section_getting_started_wifi Mit WLAN verbinden
+/// \section section_getting_started_connect Mit OpenRemise verbinden
 /// Herzlichen Glückwunsch! Die OpenRemise Firmware wurde erfolgreich auf der
-/// Platine installiert. Einige Funktionen, wie z. B. USB, sind nun bereits
-/// verfügbar, allerdings läuft die Firmware noch im sogenannten **Access Point
-/// Modus**. Das bedeutet, dass die Platine zunächst ein **eigenes WLAN Netzwerk
-/// erstellt** und sich nicht mit einem bestehenden verbindet. Daher müssen wir
-/// die WLAN Einstellungen noch anpassen, um eine Verbindung zum gewünschten
-/// Netzwerk herzustellen.
+/// Platine installiert. Per Default bootet sie nun im **Access Point** Modus.
+/// Dies bedeutet, dass die Platine zunächst ein **eigenes WLAN Netzwerk**
+/// namens `OpenRemise` erstellt. Um sich mit diesem Netzwerk zu verbinden
+/// benötigt man ein WLAN-fähiges Gerät. Falls der eigene PC kein WLAN besitzt,
+/// so kann man auch ein Smartphone oder sonstige Geräte mit Webbrowser
+/// verwenden.
 /// \~
 ///
-/// \~english
-/// To **change the WiFi settings** you have to connect to the board with a
-/// WiFi-enabled device. If your PC doesn't have WiFi, you can simply use a
-/// smartphone. Any device with a web browser is sufficient.
-/// \~german
-/// Um die **WLAN Einstellungen zu ändern** muss man sich mit einem WLAN-fähigen
-/// Gerät mit der Platine verbinden. Falls der eigene PC kein WLAN besitzt, so
-/// kann man auch ein Smartphone oder sonstige Geräte mit Webbrowser verwenden.
-/// \~
 ///
 /// \~english
-/// The following steps are necessary to change the settings:
-/// - Search for new WiFi networks
-/// - Connect to `OpenRemise`
-/// - Open a web browser and go to `remise.local` (or `192.168.4.1`)
-/// - Change the WiFi settings
-///   - Optionally change mDNS (restricted to `[^\.]*remise`, so for example
-///     `vincents-remise`)
-///   - Optionally set a static IP address
-/// - Click `Save and restart`
+/// Once a WiFi connection is established the **green LED** below the
+/// \image{inline} html wifi.svg width=16px &nbsp;symbol will
+/// **light up**. From now on, the web interface ~~will~~ should be available at
+/// the local [mDNS](https://en.wikipedia.org/wiki/Multicast_DNS) (e.g.
+/// `http://remise.local`) or it's \ref subsection_getting_started_via_ip
+/// "IP address" (e.g. `192.168.4.1`).
 /// \~german
-/// Folgende Schritte sind notwendig, um die Einstellungen zu ändern:
-/// - Neue WLAN Netzwerke suchen
-/// - Mit `OpenRemise` verbinden
-/// - Webbrowser öffnen und `remise.local` (oder `192.168.4.1`) aufrufen
-/// - WLAN Einstellungen ändern
-///   - Optional mDNS ändern (beschränkt auf `[^\.]*remise`, also z.B.
-///     `vincents-remise`)
-///   - Optional eine statische IP Adresse vergeben
-/// - `Save and restart` klicken
+/// Kommt eine WLAN Verbindung zustande so beginnt die **grüne LED** unter dem
+/// \image{inline} html wifi.svg width=16px &nbsp;Symbol
+/// **zu leuchten**. Ab sofort ~~ist~~ sollte die Weboberfläche unter der
+/// lokalen [mDNS](https://de.wikipedia.org/wiki/Multicast_DNS) (z.B.
+/// `http://remise.local`) oder ihrer \ref subsection_getting_started_via_ip
+/// "IP Adresse" (z.B. `192.168.4.1`) erreichbar sein.
 /// \~
-///
-/// \~english
-/// The following clip shows me performing these steps on my smartphone:
-/// \~german
-/// Der folgende Clip zeigt wie ich diese Schritte auf meinem Smartphone
-/// ausführe:
-/// \~
-///
-// clang-format off
-/// \page page_getting_started
-/// \details \tableofcontents
-/// \~english
-/// \htmlonly
-/// <div class="image">
-/// <iframe width="286" height="640" src="../captive_portal.webm" title="Changing WiFi settings from a smartphone" allow="picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-/// <div class="caption">Changing WiFi settings from a smartphone</div>
-/// </div>
-/// \endhtmlonly
-/// \~german
-/// \htmlonly
-/// <div class="image">
-/// <iframe width="286" height="640" src="../captive_portal.webm" title="Ändern der WLAN-Einstellungen über ein Smartphone" allow="picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-/// <div class="caption">Ändern der WLAN-Einstellungen über ein Smartphone</div>
-/// </div>
-/// \endhtmlonly
-/// \~
-// clang-format on
-/// \page page_getting_started
-/// \details \tableofcontents
 ///
 /// \~english
 /// \note
-/// Clicking on the arrow next to "Networks" opens a list of all the networks
-/// found, including signal strength and open/closed status. If the network is
-/// password protected, a small \htmlonly&#x1F512;\endhtmlonly symbol will
-/// appear next to it.
+/// In addition to **access point**
+/// \image{inline} html cell_tower.svg width=24px &nbsp;mode, OpenRemise also
+/// supports what is known as **station**
+/// \image{inline} html router.svg width=24px &nbsp;mode, that is, connecting to
+/// an existing network. All network settings can be conveniently configured via
+/// the web interface.
 /// \~german
 /// \note
-/// Ein Klick auf den Pfeil neben „Netzwerke“ öffnet eine Liste aller gefundenen
-/// Netzwerke, inklusive Signalstärke und Status (offen/geschlossen). Ist das
-/// Netzwerk passwortgeschützt, erscheint daneben ein kleines
-/// \htmlonly&#x1F512;\endhtmlonly Symbol.
-/// \~
-///
-/// \~english
-/// \section section_getting_started_frontend Open the Frontend
-/// If the board has restarted and the WiFi settings are correct, it should now
-/// connect to the network. The **green LED** under the&nbsp; \image{inline}
-/// html wifi.svg width=16px &nbsp;symbol **lights up** as soon as a connection
-/// is established.
-/// \~german
-/// \section section_getting_started_frontend Frontend öffnen
-/// Wenn die Platine neu gestartet wurde und die WLAN Einstellungen korrekt
-/// sind, dann verbindet sie sich mit dem Netzwerk. Die **grüne LED** unter dem
-/// \image{inline} html wifi.svg width=16px &nbsp;Symbol <b>leuchtet auf</b>
-/// sobald eine Verbindung besteht.
-/// \~
-///
-/// \~english
-/// From this point on, the web interface ~~will~~ should be available at the
-/// local [mDNS](https://en.wikipedia.org/wiki/Multicast_DNS) address (e.g.
-/// `http://remise.local`).
-/// \~german
-/// Ab diesem Zeitpunkt ~~ist~~ sollte die Weboberfläche unter der lokalen
-/// [mDNS](https://de.wikipedia.org/wiki/Multicast_DNS) Adresse (z. B.
-/// `http://remise.local`) erreichbar sein.
+/// Neben dem **Access Point**
+/// \image{inline} html cell_tower.svg width=24px &nbsp;Betrieb unterstützt
+/// OpenRemise auch noch den sogennanten **Station**
+/// \image{inline} html router.svg width=24px &nbsp;Betrieb, sprich das
+/// Verbinden zu einem vorhandenen Netzwerk. Alle Netzwerkeinstellungen können
+/// komfortabel über die Weboberfläche durchgeführt werden.
 /// \~
 ///
 /// \~english
@@ -827,15 +750,14 @@
 /// \subsection subsection_getting_started_via_ip  ...via IP
 /// \~english
 /// If you have problems connecting via mDNS, we recommend setting up a static
-/// [IP address](https://en.wikipedia.org/wiki/IP_address) as described in
-/// chapter \ref section_getting_started_wifi. Instead of `remise.local`, you
-/// would then type e.g. `192.168.0.4` into the browser's address bar.
+/// [IP address](https://en.wikipedia.org/wiki/IP_address). Instead of
+/// `remise.local`, you would then type e.g. `192.168.4.1` into the browser's
+/// address bar.
 /// \~german
-/// Falls die Verbindung via mDNS Probleme macht empfiehlt es sich, wie im
-/// Kapitel \ref section_getting_started_wifi beschrieben, eine [statische
-/// IP](https://de.wikipedia.org/wiki/IP-Adresse) Adresse einzurichten. Anstelle
-/// von `remise.local` erreicht man das Frontend dann indem man z.B.
-/// `192.168.0.4` in die Adresszeile des Browsers eintippt.
+/// Falls die Verbindung via mDNS Probleme macht empfiehlt es sich eine
+/// [statische IP](https://de.wikipedia.org/wiki/IP-Adresse) Adresse
+/// einzurichten. Anstelle von `remise.local` erreicht man das Frontend dann
+/// indem man z.B. `192.168.4.1` in die Adresszeile des Browsers eintippt.
 /// \~
 ///
 /// <div class="section_buttons">
@@ -961,7 +883,7 @@
 /// \details \tableofcontents
 ///
 /// \~english
-/// \section section_faq_wifi What can I do about poor WiFi reception?
+/// \section section_faq_badwifi What can I do about poor WiFi reception?
 /// The OpenRemise boards use a small onboard antenna mounted directly on the
 /// PCB. These antennas don't have particularly good performance
 /// characteristics. Therefore, it's important that the network signal strength
@@ -972,7 +894,7 @@
 /// may be helpful to check the Bluetooth devices in the area for possible
 /// interference.
 /// \~german
-/// \section section_faq_wifi Was kann ich gegen schlechten WLAN Empfang tun?
+/// \section section_faq_badwifi Was kann ich gegen schlechten WLAN Empfang tun?
 /// Die OpenRemise Platinen verwenden kleine onboard PCB Antennen. Diese
 /// Antennen weisen keine besonders guten Eigenschaften auf. Daher ist eine
 /// möglichst hohe Netzwerksignalstärke wichtig. Die Signalstärke (RSSI oder
@@ -1013,22 +935,23 @@
 /// \details \tableofcontents
 ///
 /// \~english
-/// \section section_faq_capport How to reopen the captive portal?
+/// \section section_faq_rw How to reset the WiFi settings?
 /// If the board can no longer log into your WiFi for some reason, e.g. because
-/// the password has been changed or you made a typo in the captive portal, you
-/// can create an access point by holding down BOOT for about **5 seconds**
-/// during operation. The blue LED then lights up and an access point called
+/// the password has been changed or you made a typo in the settings, you can
+/// create an access point by holding down BOOT for about **5 seconds** during
+/// operation. The blue LED then lights up and an access point called
 /// **OpenRemise** opens. There you can change the WiFi password as already seen
-/// in the \ref section_getting_started_wifi "Getting Started" Guide.
+/// in the \ref section_getting_started_connect "Getting Started" Guide.
 /// \~german
-/// \section section_faq_capport Wie kann das Captive Portal wieder öffnen?
+/// \section section_faq_rw Wie lassen sich die WLAN Einstellungen zurücksetzen?
 /// Falls sich die Platine aus irgendeinem Grund nicht mehr mit dem WLAN
 /// Netzwerk verbindet, z.B. weil sich das Password geändert hat oder man sich
-/// im Captive Portal vertippt hat, so lässt sich durch Drücken des BOOT Tasters
-/// für **5 Sekunden** der Access Point Modus wiederherstellen. Die blaue LED
-/// leuchtet auf und ein ein Access Point namens **OpenRemise** wird erstellt.
-/// Hier lassen sich die WLAN Einstellungen wie bereits in der \ref
-/// section_getting_started_wifi "Erste Schritte" Anleitung beschrieben ändern.
+/// in den Einstellungen vertippt hat, so lässt sich durch Drücken des BOOT
+/// Tasters für **5 Sekunden** der Access Point Modus wiederherstellen. Die
+/// blaue LED leuchtet auf und ein ein Access Point namens **OpenRemise** wird
+/// erstellt. Hier lassen sich die WLAN Einstellungen wie bereits in der \ref
+/// section_getting_started_connect "Erste Schritte" Anleitung beschrieben
+/// ändern.
 /// \~
 ///
 /// \~english

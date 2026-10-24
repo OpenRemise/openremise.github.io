@@ -116,8 +116,6 @@ add_custom_target(
   ${PROJECT_NAME}Docs
   COMMAND ${CMAKE_COMMAND} -E copy_directory ${CMAKE_CURRENT_LIST_DIR}/cases
           ${CMAKE_CURRENT_BINARY_DIR}/html/cases
-  COMMAND ${CMAKE_COMMAND} -E copy ${CMAKE_CURRENT_LIST_DIR}/captive_portal.webm
-          ${CMAKE_CURRENT_BINARY_DIR}/html/captive_portal.webm
   COMMAND ${CMAKE_COMMAND} -E copy ${CMAKE_CURRENT_LIST_DIR}/index.html
           ${CMAKE_CURRENT_BINARY_DIR}/html/index.html
   COMMAND
